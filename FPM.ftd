@@ -1,0 +1,8 @@
+-- import: fpm
+
+-- fpm.package: fifthtry.github.io/<change-this>
+zip: github.com/fifthtry/<change-this>/archive/refs/heads/main.zip
+
+-- fpm.dependency: fifthtry.github.io/Forest-Theme
+
+-- fpm.auto-import: fifthtry.github.io/Forest-Theme as ft
