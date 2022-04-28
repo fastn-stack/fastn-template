@@ -3,19 +3,21 @@
     <head>
         <meta charset="UTF-8"><base href="/fpm-template/">
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
-        <title>static/old/dropdown-icons/dark/radio-active.png.ftd</title>
+        <title>update-design.py.ftd</title>
         <script type="ftd" id="ftd-data">{
-  "fifthtry.github.io/language-switcher/static/old/dropdown-icons/dark/radio-active.png#src@0": {
-    "value": {
-      "$kind$": "light",
-      "dark": "-/fifthtry.github.io/language-switcher/static/old/dropdown-icons/dark/radio-active.png",
-      "light": "-/fifthtry.github.io/language-switcher/static/old/dropdown-icons/dark/radio-active.png"
-    },
+  "fifthtry.github.io/package-doc/update-design.py#content@0": {
+    "value": "import os\n\ndirectory = os.getcwd()\n\nfor filename in os.listdir(directory):\n    print(filename)\n    if not filename.endswith(\".ftd\"):\n        continue\n    f = open(os.path.join(directory, filename), 'r')\n    text = f.read()\n    t = text.replace(\"$fpm.design.type.\", \"$fpm.type.\")\\\n        .replace(\"$fpm.design.color.brand.on-region\", \"$fpm.color.main.text\")\\\n        .replace(\"$fpm.design.color.brand.region\", \"$fpm.color.main.background.base\")\\\n        .replace(\"$fpm.design.color.brand.primary-action\", \"$fpm.color.main.cta-primary.base\")\\\n        .replace(\"$fpm.design.color.brand.on-primary-action\", \"$fpm.color.main.cta-primary.text\")\\\n        .replace(\"$fpm.design.color.brand.secondary-action\", \"$fpm.color.main.cta-secondary.base\")\\\n        .replace(\"$fpm.design.color.brand.on-secondary-action\", \"$fpm.color.main.cta-secondary.text\")\\\n        .replace(\"$fpm.design.color.brand.error\", \"$fpm.color.main.error.base\")\\\n        .replace(\"$fpm.design.color.brand.on-error\", \"$fpm.color.main.error.text\") \\\n        .replace(\"$fpm.design.color.brand.success\", \"$fpm.color.main.success.base\") \\\n        .replace(\"$fpm.design.color.brand.on-success\", \"$fpm.color.main.success.text\") \\\n        .replace(\"$fpm.design.color.brand.warning\", \"$fpm.color.main.warning.base\") \\\n        .replace(\"ftd.colors\", \"ftd.color-scheme\") \\\n        .replace(\"$colors.primary-action\", \"$colors.cta-primary.base\") \\\n        .replace(\"$colors.on-primary-action\", \"$colors.cta-primary.text\") \\\n        .replace(\"$colors.secondary-action\", \"$colors.cta-secondary.base\") \\\n        .replace(\"$colors.region\", \"$colors.background.base\") \\\n        .replace(\"$colors.on-region\", \"$colors.text\") \\\n        .replace(\"$fpm.design.color.brand\", \"$fpm.color.main.background.base\") \\\n        .replace(\"$fpm.design.color.brand.on-warning\", \"$fpm.color.main.warning.text\")\n    f.close()\n    f = open(os.path.join(directory, filename), 'w')\n    f.write(t)\n    f.close()",
     "dependencies": {
       "0": [
         {
           "condition": null,
           "dependency_type": "Value",
+          "parameters": {},
+          "remaining": null
+        },
+        {
+          "condition": "$IsNotNull$",
+          "dependency_type": "Visible",
           "parameters": {},
           "remaining": null
         }
@@ -29,27 +31,7 @@
   "ftd#dark-mode": {
     "value": false,
     "dependencies": {
-      "$value#kind$": [
-        {
-          "condition": true,
-          "dependency_type": "Variable",
-          "parameters": {
-            "fifthtry.github.io/language-switcher/static/old/dropdown-icons/dark/radio-active.png#src@0": {
-              "default": {
-                "important": false,
-                "reference": null,
-                "value": "light"
-              },
-              "value": {
-                "important": false,
-                "reference": null,
-                "value": "dark"
-              }
-            }
-          },
-          "remaining": null
-        }
-      ]
+      "$value#kind$": []
     }
   },
   "ftd#desktop-breakpoint": {
@@ -451,7 +433,42 @@ body.fpm-dark .ft_md a:visited code {
 }</style>
     </head>
     <body>
-        <div data-id="main:root" style="align-items: flex-start; border-radius: 0px; border-style: solid; border-width: 0px; box-sizing: border-box; display: flex; flex-direction: column; flex-wrap: nowrap; height: 100%; justify-content: flex-start; text-decoration: none; white-space: initial; width: 100%" ><img alt="" data-id="0:main" src="-/fifthtry.github.io/language-switcher/static/old/dropdown-icons/dark/radio-active.png" style="border-radius: 0px; border-style: solid; border-width: 0px; box-sizing: border-box; text-decoration: none; white-space: initial"></div><style>
+        <div data-id="main:root" style="align-items: flex-start; border-radius: 0px; border-style: solid; border-width: 0px; box-sizing: border-box; display: flex; flex-direction: column; flex-wrap: nowrap; height: 100%; justify-content: flex-start; text-decoration: none; white-space: initial; width: 100%" ><div data-id="0:main" style="border-radius: 0px; border-style: solid; border-width: 0px; box-sizing: border-box; line-height: 26px; text-align: left; text-decoration: none; white-space: initial" ><pre style="background-color:#2b303b;"><span style="color:#b48ead;">import </span><span style="color:#c0c5ce;">os
+</span><span style="color:#c0c5ce;">
+</span><span style="color:#c0c5ce;">directory = os.</span><span style="color:#8fa1b3;">getcwd</span><span style="color:#c0c5ce;">()
+</span><span style="color:#c0c5ce;">
+</span><span style="color:#b48ead;">for </span><span style="color:#c0c5ce;">filename </span><span style="color:#b48ead;">in </span><span style="color:#c0c5ce;">os.</span><span style="color:#8fa1b3;">listdir</span><span style="color:#c0c5ce;">(directory):
+</span><span style="color:#c0c5ce;">    </span><span style="color:#96b5b4;">print</span><span style="color:#c0c5ce;">(filename)
+</span><span style="color:#c0c5ce;">    </span><span style="color:#b48ead;">if </span><span style="color:#c0c5ce;">not filename.</span><span style="color:#8fa1b3;">endswith</span><span style="color:#c0c5ce;">(&quot;</span><span style="color:#a3be8c;">.ftd</span><span style="color:#c0c5ce;">&quot;):
+</span><span style="color:#c0c5ce;">        </span><span style="color:#b48ead;">continue
+</span><span style="color:#c0c5ce;">    f = </span><span style="color:#96b5b4;">open</span><span style="color:#c0c5ce;">(os.path.</span><span style="color:#8fa1b3;">join</span><span style="color:#c0c5ce;">(directory, filename), &#39;</span><span style="color:#a3be8c;">r</span><span style="color:#c0c5ce;">&#39;)
+</span><span style="color:#c0c5ce;">    text = f.</span><span style="color:#8fa1b3;">read</span><span style="color:#c0c5ce;">()
+</span><span style="color:#c0c5ce;">    t = text.</span><span style="color:#8fa1b3;">replace</span><span style="color:#c0c5ce;">(&quot;</span><span style="color:#a3be8c;">$fpm.design.type.</span><span style="color:#c0c5ce;">&quot;, &quot;</span><span style="color:#a3be8c;">$fpm.type.</span><span style="color:#c0c5ce;">&quot;)\
+</span><span style="color:#c0c5ce;">        .</span><span style="color:#8fa1b3;">replace</span><span style="color:#c0c5ce;">(&quot;</span><span style="color:#a3be8c;">$fpm.design.color.brand.on-region</span><span style="color:#c0c5ce;">&quot;, &quot;</span><span style="color:#a3be8c;">$fpm.color.main.text</span><span style="color:#c0c5ce;">&quot;)\
+</span><span style="color:#c0c5ce;">        .</span><span style="color:#8fa1b3;">replace</span><span style="color:#c0c5ce;">(&quot;</span><span style="color:#a3be8c;">$fpm.design.color.brand.region</span><span style="color:#c0c5ce;">&quot;, &quot;</span><span style="color:#a3be8c;">$fpm.color.main.background.base</span><span style="color:#c0c5ce;">&quot;)\
+</span><span style="color:#c0c5ce;">        .</span><span style="color:#8fa1b3;">replace</span><span style="color:#c0c5ce;">(&quot;</span><span style="color:#a3be8c;">$fpm.design.color.brand.primary-action</span><span style="color:#c0c5ce;">&quot;, &quot;</span><span style="color:#a3be8c;">$fpm.color.main.cta-primary.base</span><span style="color:#c0c5ce;">&quot;)\
+</span><span style="color:#c0c5ce;">        .</span><span style="color:#8fa1b3;">replace</span><span style="color:#c0c5ce;">(&quot;</span><span style="color:#a3be8c;">$fpm.design.color.brand.on-primary-action</span><span style="color:#c0c5ce;">&quot;, &quot;</span><span style="color:#a3be8c;">$fpm.color.main.cta-primary.text</span><span style="color:#c0c5ce;">&quot;)\
+</span><span style="color:#c0c5ce;">        .</span><span style="color:#8fa1b3;">replace</span><span style="color:#c0c5ce;">(&quot;</span><span style="color:#a3be8c;">$fpm.design.color.brand.secondary-action</span><span style="color:#c0c5ce;">&quot;, &quot;</span><span style="color:#a3be8c;">$fpm.color.main.cta-secondary.base</span><span style="color:#c0c5ce;">&quot;)\
+</span><span style="color:#c0c5ce;">        .</span><span style="color:#8fa1b3;">replace</span><span style="color:#c0c5ce;">(&quot;</span><span style="color:#a3be8c;">$fpm.design.color.brand.on-secondary-action</span><span style="color:#c0c5ce;">&quot;, &quot;</span><span style="color:#a3be8c;">$fpm.color.main.cta-secondary.text</span><span style="color:#c0c5ce;">&quot;)\
+</span><span style="color:#c0c5ce;">        .</span><span style="color:#8fa1b3;">replace</span><span style="color:#c0c5ce;">(&quot;</span><span style="color:#a3be8c;">$fpm.design.color.brand.error</span><span style="color:#c0c5ce;">&quot;, &quot;</span><span style="color:#a3be8c;">$fpm.color.main.error.base</span><span style="color:#c0c5ce;">&quot;)\
+</span><span style="color:#c0c5ce;">        .</span><span style="color:#8fa1b3;">replace</span><span style="color:#c0c5ce;">(&quot;</span><span style="color:#a3be8c;">$fpm.design.color.brand.on-error</span><span style="color:#c0c5ce;">&quot;, &quot;</span><span style="color:#a3be8c;">$fpm.color.main.error.text</span><span style="color:#c0c5ce;">&quot;) \
+</span><span style="color:#c0c5ce;">        .</span><span style="color:#8fa1b3;">replace</span><span style="color:#c0c5ce;">(&quot;</span><span style="color:#a3be8c;">$fpm.design.color.brand.success</span><span style="color:#c0c5ce;">&quot;, &quot;</span><span style="color:#a3be8c;">$fpm.color.main.success.base</span><span style="color:#c0c5ce;">&quot;) \
+</span><span style="color:#c0c5ce;">        .</span><span style="color:#8fa1b3;">replace</span><span style="color:#c0c5ce;">(&quot;</span><span style="color:#a3be8c;">$fpm.design.color.brand.on-success</span><span style="color:#c0c5ce;">&quot;, &quot;</span><span style="color:#a3be8c;">$fpm.color.main.success.text</span><span style="color:#c0c5ce;">&quot;) \
+</span><span style="color:#c0c5ce;">        .</span><span style="color:#8fa1b3;">replace</span><span style="color:#c0c5ce;">(&quot;</span><span style="color:#a3be8c;">$fpm.design.color.brand.warning</span><span style="color:#c0c5ce;">&quot;, &quot;</span><span style="color:#a3be8c;">$fpm.color.main.warning.base</span><span style="color:#c0c5ce;">&quot;) \
+</span><span style="color:#c0c5ce;">        .</span><span style="color:#8fa1b3;">replace</span><span style="color:#c0c5ce;">(&quot;</span><span style="color:#a3be8c;">ftd.colors</span><span style="color:#c0c5ce;">&quot;, &quot;</span><span style="color:#a3be8c;">ftd.color-scheme</span><span style="color:#c0c5ce;">&quot;) \
+</span><span style="color:#c0c5ce;">        .</span><span style="color:#8fa1b3;">replace</span><span style="color:#c0c5ce;">(&quot;</span><span style="color:#a3be8c;">$colors.primary-action</span><span style="color:#c0c5ce;">&quot;, &quot;</span><span style="color:#a3be8c;">$colors.cta-primary.base</span><span style="color:#c0c5ce;">&quot;) \
+</span><span style="color:#c0c5ce;">        .</span><span style="color:#8fa1b3;">replace</span><span style="color:#c0c5ce;">(&quot;</span><span style="color:#a3be8c;">$colors.on-primary-action</span><span style="color:#c0c5ce;">&quot;, &quot;</span><span style="color:#a3be8c;">$colors.cta-primary.text</span><span style="color:#c0c5ce;">&quot;) \
+</span><span style="color:#c0c5ce;">        .</span><span style="color:#8fa1b3;">replace</span><span style="color:#c0c5ce;">(&quot;</span><span style="color:#a3be8c;">$colors.secondary-action</span><span style="color:#c0c5ce;">&quot;, &quot;</span><span style="color:#a3be8c;">$colors.cta-secondary.base</span><span style="color:#c0c5ce;">&quot;) \
+</span><span style="color:#c0c5ce;">        .</span><span style="color:#8fa1b3;">replace</span><span style="color:#c0c5ce;">(&quot;</span><span style="color:#a3be8c;">$colors.region</span><span style="color:#c0c5ce;">&quot;, &quot;</span><span style="color:#a3be8c;">$colors.background.base</span><span style="color:#c0c5ce;">&quot;) \
+</span><span style="color:#c0c5ce;">        .</span><span style="color:#8fa1b3;">replace</span><span style="color:#c0c5ce;">(&quot;</span><span style="color:#a3be8c;">$colors.on-region</span><span style="color:#c0c5ce;">&quot;, &quot;</span><span style="color:#a3be8c;">$colors.text</span><span style="color:#c0c5ce;">&quot;) \
+</span><span style="color:#c0c5ce;">        .</span><span style="color:#8fa1b3;">replace</span><span style="color:#c0c5ce;">(&quot;</span><span style="color:#a3be8c;">$fpm.design.color.brand</span><span style="color:#c0c5ce;">&quot;, &quot;</span><span style="color:#a3be8c;">$fpm.color.main.background.base</span><span style="color:#c0c5ce;">&quot;) \
+</span><span style="color:#c0c5ce;">        .</span><span style="color:#8fa1b3;">replace</span><span style="color:#c0c5ce;">(&quot;</span><span style="color:#a3be8c;">$fpm.design.color.brand.on-warning</span><span style="color:#c0c5ce;">&quot;, &quot;</span><span style="color:#a3be8c;">$fpm.color.main.warning.text</span><span style="color:#c0c5ce;">&quot;)
+</span><span style="color:#c0c5ce;">    f.</span><span style="color:#8fa1b3;">close</span><span style="color:#c0c5ce;">()
+</span><span style="color:#c0c5ce;">    f = </span><span style="color:#96b5b4;">open</span><span style="color:#c0c5ce;">(os.path.</span><span style="color:#8fa1b3;">join</span><span style="color:#c0c5ce;">(directory, filename), &#39;</span><span style="color:#a3be8c;">w</span><span style="color:#c0c5ce;">&#39;)
+</span><span style="color:#c0c5ce;">    f.</span><span style="color:#8fa1b3;">write</span><span style="color:#c0c5ce;">(t)
+</span><span style="color:#c0c5ce;">    f.</span><span style="color:#8fa1b3;">close</span><span style="color:#c0c5ce;">()
+</span></pre>
+</div></div><style>
 
 
 
