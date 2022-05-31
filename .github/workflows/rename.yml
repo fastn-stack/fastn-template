@@ -25,4 +25,5 @@ jobs:
           # commit_options: '--amend --no-edit'
           push_options: --force
   call-deploy-workflow:
+    if: ${{ github.repository != 'fifthtry/fpm-template' && github.run_number == 1 }}
     uses: ./.github/workflows/deploy.yml
