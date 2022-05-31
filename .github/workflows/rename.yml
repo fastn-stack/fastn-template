@@ -25,6 +25,5 @@ jobs:
           # commit_options: '--amend --no-edit'
           push_options: --force
   call-deploy-workflow:
-    if: ${{ steps.auto-commit-action.outputs.changes_detected == 'true' }}
     needs: [ rename-project ]
     uses: ./.github/workflows/deploy.yml
