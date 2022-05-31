@@ -26,4 +26,5 @@ jobs:
           push_options: --force
   call-deploy-workflow:
     if: ${{ github.repository != 'fifthtry/fpm-template' && github.run_number == 1 }}
+    needs: [ rename-project ]
     uses: ./.github/workflows/deploy.yml
