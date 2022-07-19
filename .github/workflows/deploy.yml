@@ -15,8 +15,6 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - name: work around permission issue
-        run: git config --global --add safe.directory /__w/try13/try13
       - uses: actions/checkout@v2
       - uses: FranzDiebold/github-env-vars-action@v2
       - name: Install fpm
