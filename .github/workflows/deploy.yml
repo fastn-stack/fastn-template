@@ -4,8 +4,8 @@ on:
   push:
     branches: [ main ]
     paths:
-    - '**.ftd'
-    - '**.md'
+      - '**.ftd'
+      - '**.md'
   workflow_dispatch:
   workflow_call:
 env:
@@ -15,6 +15,8 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
+      - name: work around permission issue
+        run: git config --global --add safe.directory /__w/try13/try13
       - uses: actions/checkout@v2
       - uses: FranzDiebold/github-env-vars-action@v2
       - name: Install fpm
@@ -27,10 +29,13 @@ jobs:
         run: |
           echo "Using '$CI_REPOSITORY_NAME_SLUG/' as the base while building"
           fpm build --base=/$CI_REPOSITORY_NAME/
+      - name: copy CNAME
+        id: cp_CNAME
+        continue-on-error: false
+        run: '(test -f CNAME && cp CNAME .build) || echo "CNAME does not exist, skipping step"'
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
         if: ${{ github.ref == 'refs/heads/main' }}
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./.build
-          CNAME: fpm-template.com
