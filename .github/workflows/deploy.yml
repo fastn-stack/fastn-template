@@ -4,8 +4,8 @@ on:
   push:
     branches: [ main ]
     paths:
-      - '**.ftd'
-      - '**.md'
+    - '**.ftd'
+    - '**.md'
   workflow_dispatch:
   workflow_call:
 env:
