@@ -27,6 +27,8 @@ jobs:
         run: |
           echo "Using '$CI_REPOSITORY_NAME_SLUG/' as the base while building"
           fpm build --base=/$CI_REPOSITORY_NAME/
+      - name: copy CNAME
+        run: '(test -f CNAME && cp CNAME .build) || echo "CNAME does not exist, skipping step"'
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
         if: ${{ github.ref == 'refs/heads/main' }}
