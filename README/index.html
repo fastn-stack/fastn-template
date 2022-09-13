@@ -32,7 +32,255 @@ FPM Blank Package Template Repo</title>
   "ftd#dark-mode": {
     "value": false,
     "dependencies": {
-      "$value#kind$": []
+      "$value#kind$": [
+        {
+          "condition": true,
+          "dependency_type": "Variable",
+          "parameters": {
+            "ftd#markdown-background-color.blockquote": {
+              "default": {
+                "important": false,
+                "reference": null,
+                "value": "light"
+              },
+              "value": {
+                "important": false,
+                "reference": null,
+                "value": "dark"
+              }
+            }
+          },
+          "remaining": null
+        },
+        {
+          "condition": true,
+          "dependency_type": "Variable",
+          "parameters": {
+            "ftd#markdown-background-color.code": {
+              "default": {
+                "important": false,
+                "reference": null,
+                "value": "light"
+              },
+              "value": {
+                "important": false,
+                "reference": null,
+                "value": "dark"
+              }
+            }
+          },
+          "remaining": null
+        },
+        {
+          "condition": true,
+          "dependency_type": "Variable",
+          "parameters": {
+            "ftd#markdown-background-color.link": {
+              "default": {
+                "important": false,
+                "reference": null,
+                "value": "light"
+              },
+              "value": {
+                "important": false,
+                "reference": null,
+                "value": "dark"
+              }
+            }
+          },
+          "remaining": null
+        },
+        {
+          "condition": true,
+          "dependency_type": "Variable",
+          "parameters": {
+            "ftd#markdown-background-color.link-code": {
+              "default": {
+                "important": false,
+                "reference": null,
+                "value": "light"
+              },
+              "value": {
+                "important": false,
+                "reference": null,
+                "value": "dark"
+              }
+            }
+          },
+          "remaining": null
+        },
+        {
+          "condition": true,
+          "dependency_type": "Variable",
+          "parameters": {
+            "ftd#markdown-background-color.link-visited": {
+              "default": {
+                "important": false,
+                "reference": null,
+                "value": "light"
+              },
+              "value": {
+                "important": false,
+                "reference": null,
+                "value": "dark"
+              }
+            }
+          },
+          "remaining": null
+        },
+        {
+          "condition": true,
+          "dependency_type": "Variable",
+          "parameters": {
+            "ftd#markdown-background-color.link-visited-code": {
+              "default": {
+                "important": false,
+                "reference": null,
+                "value": "light"
+              },
+              "value": {
+                "important": false,
+                "reference": null,
+                "value": "dark"
+              }
+            }
+          },
+          "remaining": null
+        },
+        {
+          "condition": true,
+          "dependency_type": "Variable",
+          "parameters": {
+            "ftd#markdown-background-color.ul-ol-li-before": {
+              "default": {
+                "important": false,
+                "reference": null,
+                "value": "light"
+              },
+              "value": {
+                "important": false,
+                "reference": null,
+                "value": "dark"
+              }
+            }
+          },
+          "remaining": null
+        },
+        {
+          "condition": true,
+          "dependency_type": "Variable",
+          "parameters": {
+            "ftd#markdown-color.code": {
+              "default": {
+                "important": false,
+                "reference": null,
+                "value": "light"
+              },
+              "value": {
+                "important": false,
+                "reference": null,
+                "value": "dark"
+              }
+            }
+          },
+          "remaining": null
+        },
+        {
+          "condition": true,
+          "dependency_type": "Variable",
+          "parameters": {
+            "ftd#markdown-color.link": {
+              "default": {
+                "important": false,
+                "reference": null,
+                "value": "light"
+              },
+              "value": {
+                "important": false,
+                "reference": null,
+                "value": "dark"
+              }
+            }
+          },
+          "remaining": null
+        },
+        {
+          "condition": true,
+          "dependency_type": "Variable",
+          "parameters": {
+            "ftd#markdown-color.link-code": {
+              "default": {
+                "important": false,
+                "reference": null,
+                "value": "light"
+              },
+              "value": {
+                "important": false,
+                "reference": null,
+                "value": "dark"
+              }
+            }
+          },
+          "remaining": null
+        },
+        {
+          "condition": true,
+          "dependency_type": "Variable",
+          "parameters": {
+            "ftd#markdown-color.link-visited": {
+              "default": {
+                "important": false,
+                "reference": null,
+                "value": "light"
+              },
+              "value": {
+                "important": false,
+                "reference": null,
+                "value": "dark"
+              }
+            }
+          },
+          "remaining": null
+        },
+        {
+          "condition": true,
+          "dependency_type": "Variable",
+          "parameters": {
+            "ftd#markdown-color.link-visited-code": {
+              "default": {
+                "important": false,
+                "reference": null,
+                "value": "light"
+              },
+              "value": {
+                "important": false,
+                "reference": null,
+                "value": "dark"
+              }
+            }
+          },
+          "remaining": null
+        },
+        {
+          "condition": true,
+          "dependency_type": "Variable",
+          "parameters": {
+            "ftd#markdown-color.ul-ol-li-before": {
+              "default": {
+                "important": false,
+                "reference": null,
+                "value": "light"
+              },
+              "value": {
+                "important": false,
+                "reference": null,
+                "value": "dark"
+              }
+            }
+          },
+          "remaining": null
+        }
+      ]
     }
   },
   "ftd#desktop-breakpoint": {
@@ -48,25 +296,6 @@ FPM Blank Package Template Repo</title>
           "dependency_type": "Variable",
           "parameters": {
             "dms#is-mobile": {
-              "default": {
-                "important": false,
-                "reference": null,
-                "value": false
-              },
-              "value": {
-                "important": false,
-                "reference": null,
-                "value": true
-              }
-            }
-          },
-          "remaining": null
-        },
-        {
-          "condition": "mobile",
-          "dependency_type": "Variable",
-          "parameters": {
-            "ds#is-mobile": {
               "default": {
                 "important": false,
                 "reference": null,
@@ -218,6 +447,25 @@ FPM Blank Package Template Repo</title>
           "condition": "mobile",
           "dependency_type": "Variable",
           "parameters": {
+            "fifthtry.github.io/roboto-mono#is-mobile": {
+              "default": {
+                "important": false,
+                "reference": null,
+                "value": false
+              },
+              "value": {
+                "important": false,
+                "reference": null,
+                "value": true
+              }
+            }
+          },
+          "remaining": null
+        },
+        {
+          "condition": "mobile",
+          "dependency_type": "Variable",
+          "parameters": {
             "fifthtry.github.io/toc#is-mobile": {
               "default": {
                 "important": false,
@@ -297,6 +545,81 @@ FPM Blank Package Template Repo</title>
     "value": true,
     "dependencies": {}
   },
+  "ftd#markdown-background-color": {
+    "value": {
+      "blockquote": {
+        "$kind$": "light",
+        "dark": "#f0f0f0",
+        "light": "#f0f0f0"
+      },
+      "code": {
+        "$kind$": "light",
+        "dark": "#9f9b9b45",
+        "light": "#9f9b9b45"
+      },
+      "link": {
+        "$kind$": "light",
+        "dark": "#18181b",
+        "light": "#18181b"
+      },
+      "link-code": {
+        "$kind$": "light",
+        "dark": "#9f9b9b45",
+        "light": "#9f9b9b45"
+      },
+      "link-visited": {
+        "$kind$": "light",
+        "dark": "#18181b",
+        "light": "#18181b"
+      },
+      "link-visited-code": {
+        "$kind$": "light",
+        "dark": "#18181b",
+        "light": "#18181b"
+      },
+      "ul-ol-li-before": {
+        "$kind$": "light",
+        "dark": "#18181b",
+        "light": "#18181b"
+      }
+    },
+    "dependencies": {}
+  },
+  "ftd#markdown-color": {
+    "value": {
+      "code": {
+        "$kind$": "light",
+        "dark": "#f6f7f8",
+        "light": "#f6f7f8"
+      },
+      "link": {
+        "$kind$": "light",
+        "dark": "#58a6ff",
+        "light": "#6a89b8"
+      },
+      "link-code": {
+        "$kind$": "light",
+        "dark": "#58a6ff",
+        "light": "#6a89b8"
+      },
+      "link-visited": {
+        "$kind$": "light",
+        "dark": "#a27de7",
+        "light": "#9475cb"
+      },
+      "link-visited-code": {
+        "$kind$": "light",
+        "dark": "#a27de7",
+        "light": "#6a89b8"
+      },
+      "ul-ol-li-before": {
+        "$kind$": "light",
+        "dark": "#ffffff",
+        "light": "#000000"
+      }
+    },
+    "dependencies": {}
+  },
   "ftd#mobile-breakpoint": {
     "value": 768,
     "dependencies": {}
@@ -307,20 +630,41 @@ FPM Blank Package Template Repo</title>
   }
 }</script>
         <script type="ftd" id="ftd-external-children">{}</script>
-        <style>html {
+        <style>*, :after, :before {
+    box-sizing: inherit;
+}
+
+body, ol ol, ol ul, ul ol, ul ul {
+    margin:0
+}
+pre, table{
+    overflow:auto
+}
+html {
     height: 100%;
     width: 100%;
 }
 
 body {
-    margin: 0;
     height: 100%;
     width: 100%;
+    word-wrap: break-word;
 }
-
-
+input, code {
+    vertical-align: middle;
+}
 pre {
     white-space: break-spaces;
+}
+html {
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizelegibility;
+    -webkit-text-size-adjust: 100%;
+    text-size-adjust: 100%;
+}
+iframe {
+    border: 0;
+    color-scheme: auto;
 }
 
 pre code {
@@ -329,58 +673,15 @@ pre code {
     padding: 10px !important;
 }
 
-p {
-    margin: 0;
-}
-
-ul {
-    margin: 0;
-}
-
 .ft_md ul,
-.ft_md ol,
-.ft_md p {
+.ft_md ol{
     margin: 10px 0;
-}
-
-.ft_md h1 {
-    font-size: 48px;
-    font-weight: 400;
-    line-height: 52px;
-    color: #ffffff;
-}
-
-.ft_md h2 {
-    font-size: 40px;
-    font-weight: 400;
-    line-height: 48px;
-    color: #ffffff;
-}
-
-.ft_md h3 {
-    font-size: 32px;
-    font-weight: 400;
-    line-height: 44px;
-    color: #ffffff;
-}
-
-.ft_md h4 {
-    font-size: 24px;
-    font-weight: 400;
-    line-height: 36px;
-    color: #ffffff;
-}
-
-.ft_md h5 {
-    line-height: 1.2em;
-    color: #ffffff;
 }
 
 .ft_md ul ul,
 .ft_md ul ol,
 .ft_md ol ul,
 .ft_md ol ol {
-    line-height: 1.5em;
     margin: 0;
 }
 
@@ -408,8 +709,6 @@ ul {
 .ft_md ul ol li:before {
     content: counter(item);
     counter-increment: item;
-    background-color: #e4e9eb;
-    color: #000000;
     font-size: 11px;
     line-height: 10px;
     text-align: center;
@@ -436,64 +735,785 @@ ul {
 }
 
 .ft_md a {
-    color: #6a89b8;
     text-decoration: none;
 }
 
-.ft_md a:visited {
-    color: #9475cb;
-}
 
 .ft_md a:hover {
     text-decoration: none;
 }
 
 .ft_md code {
-    font-size: 0.9em;
-    padding: 0.1em 0.25em;
-    background-color: rgba(159, 155, 155, 0.27);
+    padding: 0.1rem 0.25rem;
     border-radius: 4px;
 }
 
 .ft_md blockquote {
-    padding: 0.25em 1em;
-    margin: 1em 0;
-    background-color: #f0f0f0;
+    padding: 0.25rem 1rem;
+    margin: 1rem 0;
     border-radius: 3px;
 }
 
-.ft_md blockquote>blockquote {
+.ft_md blockquote > blockquote {
     margin: 0;
 }
 
-body.fpm-dark .ft_md code {
-    color: #f9f9f9;
-    background-color: rgba(255, 255, 255, 0.12);
-}
-
-body.fpm-dark .ft_md blockquote {
-    background-color: rgba(240, 240, 240, 0.12);
-}
-
 body.fpm-dark .ft_md a {
-    color: #58a6ff;
     text-decoration: none;
-}
-
-body.fpm-dark .ft_md a:visited {
-    color: #a27de7;
-}
-
-body.fpm-dark .ft_md a code {
-    color: #58a6ff;
-}
-
-body.fpm-dark .ft_md a:visited code {
-    color: #a27de7;
 }</style>
     </head>
     <body>
-        <div data-id="main:root" style="align-items: flex-start; border-radius: 0px; border-style: solid; border-width: 0px; box-sizing: border-box; display: flex; flex-direction: column; flex-wrap: nowrap; height: 100%; justify-content: flex-start; text-decoration: none; white-space: initial; width: 100%" ><div data-id="0:main" style="border-radius: 0px; border-style: solid; border-width: 0px; box-sizing: border-box; text-align: left; text-decoration: none; white-space: initial" class="ft_md"><h1>fpm-template</h1> <p>FPM Blank Package Template Repo</p></div></div>
+        <div data-id="main:root" style="align-items: flex-start; border-radius: 0px; border-style: solid; border-width: 0px; box-sizing: border-box; display: flex; flex-direction: column; flex-wrap: nowrap; height: 100%; justify-content: flex-start; text-decoration: none; white-space: initial; width: 100%" ><div data-id="0:main" style="border-radius: 0px; border-style: solid; border-width: 0px; box-sizing: border-box; text-align: left; text-decoration: none; white-space: initial" class="ft_md"><h1>fpm-template</h1> <p>FPM Blank Package Template Repo</p></div></div><style>
+
+
+
+
+
+
+
+
+@font-face { unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+font-style: normal;
+font-weight: 100;
+src: url(-/fifthtry.github.io/inter/static/Inter-100-normal-cyrillic-ext.woff2) format('woff2');
+font-family: fifthtry-github-io-inter-Inter }
+@font-face { unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+font-style: normal;
+font-weight: 100;
+src: url(-/fifthtry.github.io/inter/static/Inter-100-normal-cyrillic.woff2) format('woff2');
+font-family: fifthtry-github-io-inter-Inter }
+@font-face { unicode-range: U+1F00-1FFF;
+font-style: normal;
+font-weight: 100;
+src: url(-/fifthtry.github.io/inter/static/Inter-100-normal-greek-ext.woff2) format('woff2');
+font-family: fifthtry-github-io-inter-Inter }
+@font-face { unicode-range: U+0370-03FF;
+font-style: normal;
+font-weight: 100;
+src: url(-/fifthtry.github.io/inter/static/Inter-100-normal-greek.woff2) format('woff2');
+font-family: fifthtry-github-io-inter-Inter }
+@font-face { unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB;
+font-style: normal;
+font-weight: 100;
+src: url(-/fifthtry.github.io/inter/static/Inter-100-normal-vietnamese.woff2) format('woff2');
+font-family: fifthtry-github-io-inter-Inter }
+@font-face { unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+font-style: normal;
+font-weight: 100;
+src: url(-/fifthtry.github.io/inter/static/Inter-100-normal-latin-ext.woff2) format('woff2');
+font-family: fifthtry-github-io-inter-Inter }
+@font-face { unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+font-style: normal;
+font-weight: 100;
+src: url(-/fifthtry.github.io/inter/static/Inter-100-normal-latin.woff2) format('woff2');
+font-family: fifthtry-github-io-inter-Inter }
+@font-face { unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+font-style: normal;
+font-weight: 200;
+src: url(-/fifthtry.github.io/inter/static/Inter-200-normal-cyrillic-ext.woff2) format('woff2');
+font-family: fifthtry-github-io-inter-Inter }
+@font-face { unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+font-style: normal;
+font-weight: 200;
+src: url(-/fifthtry.github.io/inter/static/Inter-200-normal-cyrillic.woff2) format('woff2');
+font-family: fifthtry-github-io-inter-Inter }
+@font-face { unicode-range: U+1F00-1FFF;
+font-style: normal;
+font-weight: 200;
+src: url(-/fifthtry.github.io/inter/static/Inter-200-normal-greek-ext.woff2) format('woff2');
+font-family: fifthtry-github-io-inter-Inter }
+@font-face { unicode-range: U+0370-03FF;
+font-style: normal;
+font-weight: 200;
+src: url(-/fifthtry.github.io/inter/static/Inter-200-normal-greek.woff2) format('woff2');
+font-family: fifthtry-github-io-inter-Inter }
+@font-face { unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB;
+font-style: normal;
+font-weight: 200;
+src: url(-/fifthtry.github.io/inter/static/Inter-200-normal-vietnamese.woff2) format('woff2');
+font-family: fifthtry-github-io-inter-Inter }
+@font-face { unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+font-style: normal;
+font-weight: 200;
+src: url(-/fifthtry.github.io/inter/static/Inter-200-normal-latin-ext.woff2) format('woff2');
+font-family: fifthtry-github-io-inter-Inter }
+@font-face { unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+font-style: normal;
+font-weight: 200;
+src: url(-/fifthtry.github.io/inter/static/Inter-200-normal-latin.woff2) format('woff2');
+font-family: fifthtry-github-io-inter-Inter }
+@font-face { unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+font-style: normal;
+font-weight: 300;
+src: url(-/fifthtry.github.io/inter/static/Inter-300-normal-cyrillic-ext.woff2) format('woff2');
+font-family: fifthtry-github-io-inter-Inter }
+@font-face { unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+font-style: normal;
+font-weight: 300;
+src: url(-/fifthtry.github.io/inter/static/Inter-300-normal-cyrillic.woff2) format('woff2');
+font-family: fifthtry-github-io-inter-Inter }
+@font-face { unicode-range: U+1F00-1FFF;
+font-style: normal;
+font-weight: 300;
+src: url(-/fifthtry.github.io/inter/static/Inter-300-normal-greek-ext.woff2) format('woff2');
+font-family: fifthtry-github-io-inter-Inter }
+@font-face { unicode-range: U+0370-03FF;
+font-style: normal;
+font-weight: 300;
+src: url(-/fifthtry.github.io/inter/static/Inter-300-normal-greek.woff2) format('woff2');
+font-family: fifthtry-github-io-inter-Inter }
+@font-face { unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB;
+font-style: normal;
+font-weight: 300;
+src: url(-/fifthtry.github.io/inter/static/Inter-300-normal-vietnamese.woff2) format('woff2');
+font-family: fifthtry-github-io-inter-Inter }
+@font-face { unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+font-style: normal;
+font-weight: 300;
+src: url(-/fifthtry.github.io/inter/static/Inter-300-normal-latin-ext.woff2) format('woff2');
+font-family: fifthtry-github-io-inter-Inter }
+@font-face { unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+font-style: normal;
+font-weight: 300;
+src: url(-/fifthtry.github.io/inter/static/Inter-300-normal-latin.woff2) format('woff2');
+font-family: fifthtry-github-io-inter-Inter }
+@font-face { unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+font-style: normal;
+font-weight: 400;
+src: url(-/fifthtry.github.io/inter/static/Inter-400-normal-cyrillic-ext.woff2) format('woff2');
+font-family: fifthtry-github-io-inter-Inter }
+@font-face { unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+font-style: normal;
+font-weight: 400;
+src: url(-/fifthtry.github.io/inter/static/Inter-400-normal-cyrillic.woff2) format('woff2');
+font-family: fifthtry-github-io-inter-Inter }
+@font-face { unicode-range: U+1F00-1FFF;
+font-style: normal;
+font-weight: 400;
+src: url(-/fifthtry.github.io/inter/static/Inter-400-normal-greek-ext.woff2) format('woff2');
+font-family: fifthtry-github-io-inter-Inter }
+@font-face { unicode-range: U+0370-03FF;
+font-style: normal;
+font-weight: 400;
+src: url(-/fifthtry.github.io/inter/static/Inter-400-normal-greek.woff2) format('woff2');
+font-family: fifthtry-github-io-inter-Inter }
+@font-face { unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB;
+font-style: normal;
+font-weight: 400;
+src: url(-/fifthtry.github.io/inter/static/Inter-400-normal-vietnamese.woff2) format('woff2');
+font-family: fifthtry-github-io-inter-Inter }
+@font-face { unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+font-style: normal;
+font-weight: 400;
+src: url(-/fifthtry.github.io/inter/static/Inter-400-normal-latin-ext.woff2) format('woff2');
+font-family: fifthtry-github-io-inter-Inter }
+@font-face { unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+font-style: normal;
+font-weight: 400;
+src: url(-/fifthtry.github.io/inter/static/Inter-400-normal-latin.woff2) format('woff2');
+font-family: fifthtry-github-io-inter-Inter }
+@font-face { unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+font-style: normal;
+font-weight: 500;
+src: url(-/fifthtry.github.io/inter/static/Inter-500-normal-cyrillic-ext.woff2) format('woff2');
+font-family: fifthtry-github-io-inter-Inter }
+@font-face { unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+font-style: normal;
+font-weight: 500;
+src: url(-/fifthtry.github.io/inter/static/Inter-500-normal-cyrillic.woff2) format('woff2');
+font-family: fifthtry-github-io-inter-Inter }
+@font-face { unicode-range: U+1F00-1FFF;
+font-style: normal;
+font-weight: 500;
+src: url(-/fifthtry.github.io/inter/static/Inter-500-normal-greek-ext.woff2) format('woff2');
+font-family: fifthtry-github-io-inter-Inter }
+@font-face { unicode-range: U+0370-03FF;
+font-style: normal;
+font-weight: 500;
+src: url(-/fifthtry.github.io/inter/static/Inter-500-normal-greek.woff2) format('woff2');
+font-family: fifthtry-github-io-inter-Inter }
+@font-face { unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB;
+font-style: normal;
+font-weight: 500;
+src: url(-/fifthtry.github.io/inter/static/Inter-500-normal-vietnamese.woff2) format('woff2');
+font-family: fifthtry-github-io-inter-Inter }
+@font-face { unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+font-style: normal;
+font-weight: 500;
+src: url(-/fifthtry.github.io/inter/static/Inter-500-normal-latin-ext.woff2) format('woff2');
+font-family: fifthtry-github-io-inter-Inter }
+@font-face { unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+font-style: normal;
+font-weight: 500;
+src: url(-/fifthtry.github.io/inter/static/Inter-500-normal-latin.woff2) format('woff2');
+font-family: fifthtry-github-io-inter-Inter }
+@font-face { unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+font-style: normal;
+font-weight: 600;
+src: url(-/fifthtry.github.io/inter/static/Inter-600-normal-cyrillic-ext.woff2) format('woff2');
+font-family: fifthtry-github-io-inter-Inter }
+@font-face { unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+font-style: normal;
+font-weight: 600;
+src: url(-/fifthtry.github.io/inter/static/Inter-600-normal-cyrillic.woff2) format('woff2');
+font-family: fifthtry-github-io-inter-Inter }
+@font-face { unicode-range: U+1F00-1FFF;
+font-style: normal;
+font-weight: 600;
+src: url(-/fifthtry.github.io/inter/static/Inter-600-normal-greek-ext.woff2) format('woff2');
+font-family: fifthtry-github-io-inter-Inter }
+@font-face { unicode-range: U+0370-03FF;
+font-style: normal;
+font-weight: 600;
+src: url(-/fifthtry.github.io/inter/static/Inter-600-normal-greek.woff2) format('woff2');
+font-family: fifthtry-github-io-inter-Inter }
+@font-face { unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB;
+font-style: normal;
+font-weight: 600;
+src: url(-/fifthtry.github.io/inter/static/Inter-600-normal-vietnamese.woff2) format('woff2');
+font-family: fifthtry-github-io-inter-Inter }
+@font-face { unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+font-style: normal;
+font-weight: 600;
+src: url(-/fifthtry.github.io/inter/static/Inter-600-normal-latin-ext.woff2) format('woff2');
+font-family: fifthtry-github-io-inter-Inter }
+@font-face { unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+font-style: normal;
+font-weight: 600;
+src: url(-/fifthtry.github.io/inter/static/Inter-600-normal-latin.woff2) format('woff2');
+font-family: fifthtry-github-io-inter-Inter }
+@font-face { unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+font-style: normal;
+font-weight: 700;
+src: url(-/fifthtry.github.io/inter/static/Inter-700-normal-cyrillic-ext.woff2) format('woff2');
+font-family: fifthtry-github-io-inter-Inter }
+@font-face { unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+font-style: normal;
+font-weight: 700;
+src: url(-/fifthtry.github.io/inter/static/Inter-700-normal-cyrillic.woff2) format('woff2');
+font-family: fifthtry-github-io-inter-Inter }
+@font-face { unicode-range: U+1F00-1FFF;
+font-style: normal;
+font-weight: 700;
+src: url(-/fifthtry.github.io/inter/static/Inter-700-normal-greek-ext.woff2) format('woff2');
+font-family: fifthtry-github-io-inter-Inter }
+@font-face { unicode-range: U+0370-03FF;
+font-style: normal;
+font-weight: 700;
+src: url(-/fifthtry.github.io/inter/static/Inter-700-normal-greek.woff2) format('woff2');
+font-family: fifthtry-github-io-inter-Inter }
+@font-face { unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB;
+font-style: normal;
+font-weight: 700;
+src: url(-/fifthtry.github.io/inter/static/Inter-700-normal-vietnamese.woff2) format('woff2');
+font-family: fifthtry-github-io-inter-Inter }
+@font-face { unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+font-style: normal;
+font-weight: 700;
+src: url(-/fifthtry.github.io/inter/static/Inter-700-normal-latin-ext.woff2) format('woff2');
+font-family: fifthtry-github-io-inter-Inter }
+@font-face { unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+font-style: normal;
+font-weight: 700;
+src: url(-/fifthtry.github.io/inter/static/Inter-700-normal-latin.woff2) format('woff2');
+font-family: fifthtry-github-io-inter-Inter }
+@font-face { unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+font-style: normal;
+font-weight: 800;
+src: url(-/fifthtry.github.io/inter/static/Inter-800-normal-cyrillic-ext.woff2) format('woff2');
+font-family: fifthtry-github-io-inter-Inter }
+@font-face { unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+font-style: normal;
+font-weight: 800;
+src: url(-/fifthtry.github.io/inter/static/Inter-800-normal-cyrillic.woff2) format('woff2');
+font-family: fifthtry-github-io-inter-Inter }
+@font-face { unicode-range: U+1F00-1FFF;
+font-style: normal;
+font-weight: 800;
+src: url(-/fifthtry.github.io/inter/static/Inter-800-normal-greek-ext.woff2) format('woff2');
+font-family: fifthtry-github-io-inter-Inter }
+@font-face { unicode-range: U+0370-03FF;
+font-style: normal;
+font-weight: 800;
+src: url(-/fifthtry.github.io/inter/static/Inter-800-normal-greek.woff2) format('woff2');
+font-family: fifthtry-github-io-inter-Inter }
+@font-face { unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB;
+font-style: normal;
+font-weight: 800;
+src: url(-/fifthtry.github.io/inter/static/Inter-800-normal-vietnamese.woff2) format('woff2');
+font-family: fifthtry-github-io-inter-Inter }
+@font-face { unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+font-style: normal;
+font-weight: 800;
+src: url(-/fifthtry.github.io/inter/static/Inter-800-normal-latin-ext.woff2) format('woff2');
+font-family: fifthtry-github-io-inter-Inter }
+@font-face { unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+font-style: normal;
+font-weight: 800;
+src: url(-/fifthtry.github.io/inter/static/Inter-800-normal-latin.woff2) format('woff2');
+font-family: fifthtry-github-io-inter-Inter }
+@font-face { unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+font-style: normal;
+font-weight: 900;
+src: url(-/fifthtry.github.io/inter/static/Inter-900-normal-cyrillic-ext.woff2) format('woff2');
+font-family: fifthtry-github-io-inter-Inter }
+@font-face { unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+font-style: normal;
+font-weight: 900;
+src: url(-/fifthtry.github.io/inter/static/Inter-900-normal-cyrillic.woff2) format('woff2');
+font-family: fifthtry-github-io-inter-Inter }
+@font-face { unicode-range: U+1F00-1FFF;
+font-style: normal;
+font-weight: 900;
+src: url(-/fifthtry.github.io/inter/static/Inter-900-normal-greek-ext.woff2) format('woff2');
+font-family: fifthtry-github-io-inter-Inter }
+@font-face { unicode-range: U+0370-03FF;
+font-style: normal;
+font-weight: 900;
+src: url(-/fifthtry.github.io/inter/static/Inter-900-normal-greek.woff2) format('woff2');
+font-family: fifthtry-github-io-inter-Inter }
+@font-face { unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB;
+font-style: normal;
+font-weight: 900;
+src: url(-/fifthtry.github.io/inter/static/Inter-900-normal-vietnamese.woff2) format('woff2');
+font-family: fifthtry-github-io-inter-Inter }
+@font-face { unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+font-style: normal;
+font-weight: 900;
+src: url(-/fifthtry.github.io/inter/static/Inter-900-normal-latin-ext.woff2) format('woff2');
+font-family: fifthtry-github-io-inter-Inter }
+@font-face { unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+font-style: normal;
+font-weight: 900;
+src: url(-/fifthtry.github.io/inter/static/Inter-900-normal-latin.woff2) format('woff2');
+font-family: fifthtry-github-io-inter-Inter }
+
+
+
+
+@font-face { unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+font-style: italic;
+font-weight: 100;
+src: url(-/fifthtry.github.io/roboto-mono/static/Mono-100-italic-cyrillic-ext.woff2) format('woff2');
+font-family: fifthtry-github-io-roboto-mono-Mono }
+@font-face { unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+font-style: italic;
+font-weight: 100;
+src: url(-/fifthtry.github.io/roboto-mono/static/Mono-100-italic-cyrillic.woff2) format('woff2');
+font-family: fifthtry-github-io-roboto-mono-Mono }
+@font-face { unicode-range: U+0370-03FF;
+font-style: italic;
+font-weight: 100;
+src: url(-/fifthtry.github.io/roboto-mono/static/Mono-100-italic-greek.woff2) format('woff2');
+font-family: fifthtry-github-io-roboto-mono-Mono }
+@font-face { unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB;
+font-style: italic;
+font-weight: 100;
+src: url(-/fifthtry.github.io/roboto-mono/static/Mono-100-italic-vietnamese.woff2) format('woff2');
+font-family: fifthtry-github-io-roboto-mono-Mono }
+@font-face { unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+font-style: italic;
+font-weight: 100;
+src: url(-/fifthtry.github.io/roboto-mono/static/Mono-100-italic-latin-ext.woff2) format('woff2');
+font-family: fifthtry-github-io-roboto-mono-Mono }
+@font-face { unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+font-style: italic;
+font-weight: 100;
+src: url(-/fifthtry.github.io/roboto-mono/static/Mono-100-italic-latin.woff2) format('woff2');
+font-family: fifthtry-github-io-roboto-mono-Mono }
+@font-face { unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+font-style: italic;
+font-weight: 200;
+src: url(-/fifthtry.github.io/roboto-mono/static/Mono-200-italic-cyrillic-ext.woff2) format('woff2');
+font-family: fifthtry-github-io-roboto-mono-Mono }
+@font-face { unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+font-style: italic;
+font-weight: 200;
+src: url(-/fifthtry.github.io/roboto-mono/static/Mono-200-italic-cyrillic.woff2) format('woff2');
+font-family: fifthtry-github-io-roboto-mono-Mono }
+@font-face { unicode-range: U+0370-03FF;
+font-style: italic;
+font-weight: 200;
+src: url(-/fifthtry.github.io/roboto-mono/static/Mono-200-italic-greek.woff2) format('woff2');
+font-family: fifthtry-github-io-roboto-mono-Mono }
+@font-face { unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB;
+font-style: italic;
+font-weight: 200;
+src: url(-/fifthtry.github.io/roboto-mono/static/Mono-200-italic-vietnamese.woff2) format('woff2');
+font-family: fifthtry-github-io-roboto-mono-Mono }
+@font-face { unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+font-style: italic;
+font-weight: 200;
+src: url(-/fifthtry.github.io/roboto-mono/static/Mono-200-italic-latin-ext.woff2) format('woff2');
+font-family: fifthtry-github-io-roboto-mono-Mono }
+@font-face { unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+font-style: italic;
+font-weight: 200;
+src: url(-/fifthtry.github.io/roboto-mono/static/Mono-200-italic-latin.woff2) format('woff2');
+font-family: fifthtry-github-io-roboto-mono-Mono }
+@font-face { unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+font-style: italic;
+font-weight: 300;
+src: url(-/fifthtry.github.io/roboto-mono/static/Mono-300-italic-cyrillic-ext.woff2) format('woff2');
+font-family: fifthtry-github-io-roboto-mono-Mono }
+@font-face { unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+font-style: italic;
+font-weight: 300;
+src: url(-/fifthtry.github.io/roboto-mono/static/Mono-300-italic-cyrillic.woff2) format('woff2');
+font-family: fifthtry-github-io-roboto-mono-Mono }
+@font-face { unicode-range: U+0370-03FF;
+font-style: italic;
+font-weight: 300;
+src: url(-/fifthtry.github.io/roboto-mono/static/Mono-300-italic-greek.woff2) format('woff2');
+font-family: fifthtry-github-io-roboto-mono-Mono }
+@font-face { unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB;
+font-style: italic;
+font-weight: 300;
+src: url(-/fifthtry.github.io/roboto-mono/static/Mono-300-italic-vietnamese.woff2) format('woff2');
+font-family: fifthtry-github-io-roboto-mono-Mono }
+@font-face { unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+font-style: italic;
+font-weight: 300;
+src: url(-/fifthtry.github.io/roboto-mono/static/Mono-300-italic-latin-ext.woff2) format('woff2');
+font-family: fifthtry-github-io-roboto-mono-Mono }
+@font-face { unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+font-style: italic;
+font-weight: 300;
+src: url(-/fifthtry.github.io/roboto-mono/static/Mono-300-italic-latin.woff2) format('woff2');
+font-family: fifthtry-github-io-roboto-mono-Mono }
+@font-face { unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+font-style: italic;
+font-weight: 400;
+src: url(-/fifthtry.github.io/roboto-mono/static/Mono-400-italic-cyrillic-ext.woff2) format('woff2');
+font-family: fifthtry-github-io-roboto-mono-Mono }
+@font-face { unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+font-style: italic;
+font-weight: 400;
+src: url(-/fifthtry.github.io/roboto-mono/static/Mono-400-italic-cyrillic.woff2) format('woff2');
+font-family: fifthtry-github-io-roboto-mono-Mono }
+@font-face { unicode-range: U+0370-03FF;
+font-style: italic;
+font-weight: 400;
+src: url(-/fifthtry.github.io/roboto-mono/static/Mono-400-italic-greek.woff2) format('woff2');
+font-family: fifthtry-github-io-roboto-mono-Mono }
+@font-face { unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB;
+font-style: italic;
+font-weight: 400;
+src: url(-/fifthtry.github.io/roboto-mono/static/Mono-400-italic-vietnamese.woff2) format('woff2');
+font-family: fifthtry-github-io-roboto-mono-Mono }
+@font-face { unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+font-style: italic;
+font-weight: 400;
+src: url(-/fifthtry.github.io/roboto-mono/static/Mono-400-italic-latin-ext.woff2) format('woff2');
+font-family: fifthtry-github-io-roboto-mono-Mono }
+@font-face { unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+font-style: italic;
+font-weight: 400;
+src: url(-/fifthtry.github.io/roboto-mono/static/Mono-400-italic-latin.woff2) format('woff2');
+font-family: fifthtry-github-io-roboto-mono-Mono }
+@font-face { unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+font-style: italic;
+font-weight: 500;
+src: url(-/fifthtry.github.io/roboto-mono/static/Mono-500-italic-cyrillic-ext.woff2) format('woff2');
+font-family: fifthtry-github-io-roboto-mono-Mono }
+@font-face { unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+font-style: italic;
+font-weight: 500;
+src: url(-/fifthtry.github.io/roboto-mono/static/Mono-500-italic-cyrillic.woff2) format('woff2');
+font-family: fifthtry-github-io-roboto-mono-Mono }
+@font-face { unicode-range: U+0370-03FF;
+font-style: italic;
+font-weight: 500;
+src: url(-/fifthtry.github.io/roboto-mono/static/Mono-500-italic-greek.woff2) format('woff2');
+font-family: fifthtry-github-io-roboto-mono-Mono }
+@font-face { unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB;
+font-style: italic;
+font-weight: 500;
+src: url(-/fifthtry.github.io/roboto-mono/static/Mono-500-italic-vietnamese.woff2) format('woff2');
+font-family: fifthtry-github-io-roboto-mono-Mono }
+@font-face { unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+font-style: italic;
+font-weight: 500;
+src: url(-/fifthtry.github.io/roboto-mono/static/Mono-500-italic-latin-ext.woff2) format('woff2');
+font-family: fifthtry-github-io-roboto-mono-Mono }
+@font-face { unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+font-style: italic;
+font-weight: 500;
+src: url(-/fifthtry.github.io/roboto-mono/static/Mono-500-italic-latin.woff2) format('woff2');
+font-family: fifthtry-github-io-roboto-mono-Mono }
+@font-face { unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+font-style: italic;
+font-weight: 600;
+src: url(-/fifthtry.github.io/roboto-mono/static/Mono-600-italic-cyrillic-ext.woff2) format('woff2');
+font-family: fifthtry-github-io-roboto-mono-Mono }
+@font-face { unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+font-style: italic;
+font-weight: 600;
+src: url(-/fifthtry.github.io/roboto-mono/static/Mono-600-italic-cyrillic.woff2) format('woff2');
+font-family: fifthtry-github-io-roboto-mono-Mono }
+@font-face { unicode-range: U+0370-03FF;
+font-style: italic;
+font-weight: 600;
+src: url(-/fifthtry.github.io/roboto-mono/static/Mono-600-italic-greek.woff2) format('woff2');
+font-family: fifthtry-github-io-roboto-mono-Mono }
+@font-face { unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB;
+font-style: italic;
+font-weight: 600;
+src: url(-/fifthtry.github.io/roboto-mono/static/Mono-600-italic-vietnamese.woff2) format('woff2');
+font-family: fifthtry-github-io-roboto-mono-Mono }
+@font-face { unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+font-style: italic;
+font-weight: 600;
+src: url(-/fifthtry.github.io/roboto-mono/static/Mono-600-italic-latin-ext.woff2) format('woff2');
+font-family: fifthtry-github-io-roboto-mono-Mono }
+@font-face { unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+font-style: italic;
+font-weight: 600;
+src: url(-/fifthtry.github.io/roboto-mono/static/Mono-600-italic-latin.woff2) format('woff2');
+font-family: fifthtry-github-io-roboto-mono-Mono }
+@font-face { unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+font-style: italic;
+font-weight: 700;
+src: url(-/fifthtry.github.io/roboto-mono/static/Mono-700-italic-cyrillic-ext.woff2) format('woff2');
+font-family: fifthtry-github-io-roboto-mono-Mono }
+@font-face { unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+font-style: italic;
+font-weight: 700;
+src: url(-/fifthtry.github.io/roboto-mono/static/Mono-700-italic-cyrillic.woff2) format('woff2');
+font-family: fifthtry-github-io-roboto-mono-Mono }
+@font-face { unicode-range: U+0370-03FF;
+font-style: italic;
+font-weight: 700;
+src: url(-/fifthtry.github.io/roboto-mono/static/Mono-700-italic-greek.woff2) format('woff2');
+font-family: fifthtry-github-io-roboto-mono-Mono }
+@font-face { unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB;
+font-style: italic;
+font-weight: 700;
+src: url(-/fifthtry.github.io/roboto-mono/static/Mono-700-italic-vietnamese.woff2) format('woff2');
+font-family: fifthtry-github-io-roboto-mono-Mono }
+@font-face { unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+font-style: italic;
+font-weight: 700;
+src: url(-/fifthtry.github.io/roboto-mono/static/Mono-700-italic-latin-ext.woff2) format('woff2');
+font-family: fifthtry-github-io-roboto-mono-Mono }
+@font-face { unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+font-style: italic;
+font-weight: 700;
+src: url(-/fifthtry.github.io/roboto-mono/static/Mono-700-italic-latin.woff2) format('woff2');
+font-family: fifthtry-github-io-roboto-mono-Mono }
+@font-face { unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+font-style: normal;
+font-weight: 100;
+src: url(-/fifthtry.github.io/roboto-mono/static/Mono-100-normal-cyrillic-ext.woff2) format('woff2');
+font-family: fifthtry-github-io-roboto-mono-Mono }
+@font-face { unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+font-style: normal;
+font-weight: 100;
+src: url(-/fifthtry.github.io/roboto-mono/static/Mono-100-normal-cyrillic.woff2) format('woff2');
+font-family: fifthtry-github-io-roboto-mono-Mono }
+@font-face { unicode-range: U+0370-03FF;
+font-style: normal;
+font-weight: 100;
+src: url(-/fifthtry.github.io/roboto-mono/static/Mono-100-normal-greek.woff2) format('woff2');
+font-family: fifthtry-github-io-roboto-mono-Mono }
+@font-face { unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB;
+font-style: normal;
+font-weight: 100;
+src: url(-/fifthtry.github.io/roboto-mono/static/Mono-100-normal-vietnamese.woff2) format('woff2');
+font-family: fifthtry-github-io-roboto-mono-Mono }
+@font-face { unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+font-style: normal;
+font-weight: 100;
+src: url(-/fifthtry.github.io/roboto-mono/static/Mono-100-normal-latin-ext.woff2) format('woff2');
+font-family: fifthtry-github-io-roboto-mono-Mono }
+@font-face { unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+font-style: normal;
+font-weight: 100;
+src: url(-/fifthtry.github.io/roboto-mono/static/Mono-100-normal-latin.woff2) format('woff2');
+font-family: fifthtry-github-io-roboto-mono-Mono }
+@font-face { unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+font-style: normal;
+font-weight: 200;
+src: url(-/fifthtry.github.io/roboto-mono/static/Mono-200-normal-cyrillic-ext.woff2) format('woff2');
+font-family: fifthtry-github-io-roboto-mono-Mono }
+@font-face { unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+font-style: normal;
+font-weight: 200;
+src: url(-/fifthtry.github.io/roboto-mono/static/Mono-200-normal-cyrillic.woff2) format('woff2');
+font-family: fifthtry-github-io-roboto-mono-Mono }
+@font-face { unicode-range: U+0370-03FF;
+font-style: normal;
+font-weight: 200;
+src: url(-/fifthtry.github.io/roboto-mono/static/Mono-200-normal-greek.woff2) format('woff2');
+font-family: fifthtry-github-io-roboto-mono-Mono }
+@font-face { unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB;
+font-style: normal;
+font-weight: 200;
+src: url(-/fifthtry.github.io/roboto-mono/static/Mono-200-normal-vietnamese.woff2) format('woff2');
+font-family: fifthtry-github-io-roboto-mono-Mono }
+@font-face { unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+font-style: normal;
+font-weight: 200;
+src: url(-/fifthtry.github.io/roboto-mono/static/Mono-200-normal-latin-ext.woff2) format('woff2');
+font-family: fifthtry-github-io-roboto-mono-Mono }
+@font-face { unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+font-style: normal;
+font-weight: 200;
+src: url(-/fifthtry.github.io/roboto-mono/static/Mono-200-normal-latin.woff2) format('woff2');
+font-family: fifthtry-github-io-roboto-mono-Mono }
+@font-face { unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+font-style: normal;
+font-weight: 300;
+src: url(-/fifthtry.github.io/roboto-mono/static/Mono-300-normal-cyrillic-ext.woff2) format('woff2');
+font-family: fifthtry-github-io-roboto-mono-Mono }
+@font-face { unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+font-style: normal;
+font-weight: 300;
+src: url(-/fifthtry.github.io/roboto-mono/static/Mono-300-normal-cyrillic.woff2) format('woff2');
+font-family: fifthtry-github-io-roboto-mono-Mono }
+@font-face { unicode-range: U+0370-03FF;
+font-style: normal;
+font-weight: 300;
+src: url(-/fifthtry.github.io/roboto-mono/static/Mono-300-normal-greek.woff2) format('woff2');
+font-family: fifthtry-github-io-roboto-mono-Mono }
+@font-face { unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB;
+font-style: normal;
+font-weight: 300;
+src: url(-/fifthtry.github.io/roboto-mono/static/Mono-300-normal-vietnamese.woff2) format('woff2');
+font-family: fifthtry-github-io-roboto-mono-Mono }
+@font-face { unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+font-style: normal;
+font-weight: 300;
+src: url(-/fifthtry.github.io/roboto-mono/static/Mono-300-normal-latin-ext.woff2) format('woff2');
+font-family: fifthtry-github-io-roboto-mono-Mono }
+@font-face { unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+font-style: normal;
+font-weight: 300;
+src: url(-/fifthtry.github.io/roboto-mono/static/Mono-300-normal-latin.woff2) format('woff2');
+font-family: fifthtry-github-io-roboto-mono-Mono }
+@font-face { unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+font-style: normal;
+font-weight: 400;
+src: url(-/fifthtry.github.io/roboto-mono/static/Mono-400-normal-cyrillic-ext.woff2) format('woff2');
+font-family: fifthtry-github-io-roboto-mono-Mono }
+@font-face { unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+font-style: normal;
+font-weight: 400;
+src: url(-/fifthtry.github.io/roboto-mono/static/Mono-400-normal-cyrillic.woff2) format('woff2');
+font-family: fifthtry-github-io-roboto-mono-Mono }
+@font-face { unicode-range: U+0370-03FF;
+font-style: normal;
+font-weight: 400;
+src: url(-/fifthtry.github.io/roboto-mono/static/Mono-400-normal-greek.woff2) format('woff2');
+font-family: fifthtry-github-io-roboto-mono-Mono }
+@font-face { unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB;
+font-style: normal;
+font-weight: 400;
+src: url(-/fifthtry.github.io/roboto-mono/static/Mono-400-normal-vietnamese.woff2) format('woff2');
+font-family: fifthtry-github-io-roboto-mono-Mono }
+@font-face { unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+font-style: normal;
+font-weight: 400;
+src: url(-/fifthtry.github.io/roboto-mono/static/Mono-400-normal-latin-ext.woff2) format('woff2');
+font-family: fifthtry-github-io-roboto-mono-Mono }
+@font-face { unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+font-style: normal;
+font-weight: 400;
+src: url(-/fifthtry.github.io/roboto-mono/static/Mono-400-normal-latin.woff2) format('woff2');
+font-family: fifthtry-github-io-roboto-mono-Mono }
+@font-face { unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+font-style: normal;
+font-weight: 500;
+src: url(-/fifthtry.github.io/roboto-mono/static/Mono-500-normal-cyrillic-ext.woff2) format('woff2');
+font-family: fifthtry-github-io-roboto-mono-Mono }
+@font-face { unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+font-style: normal;
+font-weight: 500;
+src: url(-/fifthtry.github.io/roboto-mono/static/Mono-500-normal-cyrillic.woff2) format('woff2');
+font-family: fifthtry-github-io-roboto-mono-Mono }
+@font-face { unicode-range: U+0370-03FF;
+font-style: normal;
+font-weight: 500;
+src: url(-/fifthtry.github.io/roboto-mono/static/Mono-500-normal-greek.woff2) format('woff2');
+font-family: fifthtry-github-io-roboto-mono-Mono }
+@font-face { unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB;
+font-style: normal;
+font-weight: 500;
+src: url(-/fifthtry.github.io/roboto-mono/static/Mono-500-normal-vietnamese.woff2) format('woff2');
+font-family: fifthtry-github-io-roboto-mono-Mono }
+@font-face { unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+font-style: normal;
+font-weight: 500;
+src: url(-/fifthtry.github.io/roboto-mono/static/Mono-500-normal-latin-ext.woff2) format('woff2');
+font-family: fifthtry-github-io-roboto-mono-Mono }
+@font-face { unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+font-style: normal;
+font-weight: 500;
+src: url(-/fifthtry.github.io/roboto-mono/static/Mono-500-normal-latin.woff2) format('woff2');
+font-family: fifthtry-github-io-roboto-mono-Mono }
+@font-face { unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+font-style: normal;
+font-weight: 600;
+src: url(-/fifthtry.github.io/roboto-mono/static/Mono-600-normal-cyrillic-ext.woff2) format('woff2');
+font-family: fifthtry-github-io-roboto-mono-Mono }
+@font-face { unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+font-style: normal;
+font-weight: 600;
+src: url(-/fifthtry.github.io/roboto-mono/static/Mono-600-normal-cyrillic.woff2) format('woff2');
+font-family: fifthtry-github-io-roboto-mono-Mono }
+@font-face { unicode-range: U+0370-03FF;
+font-style: normal;
+font-weight: 600;
+src: url(-/fifthtry.github.io/roboto-mono/static/Mono-600-normal-greek.woff2) format('woff2');
+font-family: fifthtry-github-io-roboto-mono-Mono }
+@font-face { unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB;
+font-style: normal;
+font-weight: 600;
+src: url(-/fifthtry.github.io/roboto-mono/static/Mono-600-normal-vietnamese.woff2) format('woff2');
+font-family: fifthtry-github-io-roboto-mono-Mono }
+@font-face { unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+font-style: normal;
+font-weight: 600;
+src: url(-/fifthtry.github.io/roboto-mono/static/Mono-600-normal-latin-ext.woff2) format('woff2');
+font-family: fifthtry-github-io-roboto-mono-Mono }
+@font-face { unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+font-style: normal;
+font-weight: 600;
+src: url(-/fifthtry.github.io/roboto-mono/static/Mono-600-normal-latin.woff2) format('woff2');
+font-family: fifthtry-github-io-roboto-mono-Mono }
+@font-face { unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+font-style: normal;
+font-weight: 700;
+src: url(-/fifthtry.github.io/roboto-mono/static/Mono-700-normal-cyrillic-ext.woff2) format('woff2');
+font-family: fifthtry-github-io-roboto-mono-Mono }
+@font-face { unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+font-style: normal;
+font-weight: 700;
+src: url(-/fifthtry.github.io/roboto-mono/static/Mono-700-normal-cyrillic.woff2) format('woff2');
+font-family: fifthtry-github-io-roboto-mono-Mono }
+@font-face { unicode-range: U+0370-03FF;
+font-style: normal;
+font-weight: 700;
+src: url(-/fifthtry.github.io/roboto-mono/static/Mono-700-normal-greek.woff2) format('woff2');
+font-family: fifthtry-github-io-roboto-mono-Mono }
+@font-face { unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB;
+font-style: normal;
+font-weight: 700;
+src: url(-/fifthtry.github.io/roboto-mono/static/Mono-700-normal-vietnamese.woff2) format('woff2');
+font-family: fifthtry-github-io-roboto-mono-Mono }
+@font-face { unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+font-style: normal;
+font-weight: 700;
+src: url(-/fifthtry.github.io/roboto-mono/static/Mono-700-normal-latin-ext.woff2) format('woff2');
+font-family: fifthtry-github-io-roboto-mono-Mono }
+@font-face { unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+font-style: normal;
+font-weight: 700;
+src: url(-/fifthtry.github.io/roboto-mono/static/Mono-700-normal-latin.woff2) format('woff2');
+font-family: fifthtry-github-io-roboto-mono-Mono }
+
+
+</style>
         <script>
             // all ftd_utils are meant to be pure functions only: they can only depend on the
 // input passed, not on closures or global data etc
@@ -507,25 +1527,29 @@ function console_log(...message) {
 
 let ftd_utils = {
     resolve_reference: function (value, reference, data, obj) {
+        let data_value_ref = (reference !== null && !(value instanceof Object)) ?
+            ftd_utils.get_data_with_default(data, reference) : null;
         if (value instanceof Object) {
             let result = value instanceof Array ? [] : {};
             for (var key of Object.keys(value)) {
                 if (((typeof value[key]) === "object") && (reference[key] !== undefined)) {
                     result[key] = ftd_utils.resolve_reference(value[key], reference[key], data);
                 } else if (reference[key] !== undefined && reference[key] !== null) {
-                    result[key] = (data[reference[key]] !== undefined && data[reference[key]].value !== undefined) ? data[reference[key]].value : value[key];
+                    let data_value = ftd_utils.get_data_value(data, reference[key])
+                    result[key] = (data_value !== undefined) ? data_value : value[key];
                 } else {
                     result[key] = (value[key] === "$VALUE" && obj.value !== undefined) ? obj.value : value[key];
                 }
             }
             for (var key of Object.keys(reference)) {
-                if (value[key] === undefined && data[reference[key]] !== undefined && data[reference[key]].value !== undefined) {
-                    result[key] = data[reference[key]].value;
+                let data_value = ftd_utils.get_data_value(data, reference[key])
+                if (value[key] === undefined && data_value !== undefined) {
+                    result[key] = data_value;
                 }
             }
             return result;
-        } else if (reference !== null && reference !== undefined && data[reference] !== undefined && data[reference].value !== undefined) {
-            return data[reference]["value"];
+        } else if (reference !== null && reference !== undefined && data_value_ref !== undefined) {
+            return data_value_ref;
         } else {
             return (value === "$VALUE" && obj.value !== undefined) ? obj.value : value;
         }
@@ -848,6 +1872,9 @@ let ftd_utils = {
         if (!areObjects && object1 !== object2) {
             return false;
         }
+        if (!areObjects) {
+            return true;
+        }
         const keys1 = Object.keys(object1);
         const keys2 = Object.keys(object2);
         if (keys1.length !== keys2.length) {
@@ -867,6 +1894,13 @@ let ftd_utils = {
         return object != null && typeof object === 'object';
     },
 
+    deepCopy: function (object) {
+        if (ftd_utils.isObject(object)) {
+            return JSON.parse(JSON.stringify(object));
+        }
+        return object;
+    },
+
     get_data_value: function (data, name) {
         let [var_name, remaining] = ftd_utils.get_name_and_remaining(name);
         let initial_value = data[var_name].value;
@@ -879,7 +1913,15 @@ let ftd_utils = {
             }
             remaining = p2;
         }
-        return initial_value;
+        return ftd_utils.deepCopy(initial_value);
+    },
+
+    get_data_with_default: function (data, name, def) {
+        try {
+            return ftd_utils.get_data_value(data, name);
+        } catch (e) {
+            return def;
+        }
     },
 
     set_data_value: function (data, name, value) {
@@ -888,7 +1930,7 @@ let ftd_utils = {
         if (ftd_utils.isJson(initial_value)) {
             initial_value = JSON.parse(initial_value);
         }
-        data[var_name].value = set(initial_value, remaining, value);
+        data[var_name].value = ftd_utils.deepCopy(set(initial_value, remaining, value));
 
         function set(initial_value, remaining, value) {
             if (!remaining) {
@@ -944,7 +1986,9 @@ let ftd_utils = {
                                 continue;
                             }
                             let doc = document.querySelector(`[data-id="${dependency}:${id}"]`);
-                            if (doc.src !== undefined) {
+                            if (doc.nodeName === "INPUT") {
+                                doc.value = new_value;
+                            } else if (doc.src !== undefined) {
                                 doc.src = new_value;
                             } else {
                                 doc.innerText = new_value;
@@ -979,8 +2023,9 @@ let ftd_utils = {
                                 for (const parameter in json_dependency.parameters) {
                                     let param_val = json_dependency.parameters[parameter].value.value;
                                     let node = param_val["$node$"];
-                                    let variable = param_val["$variable$"];
-                                    let dependent = data[variable].value;
+                                    let var_ = param_val["$variable$"];
+                                    let dependent = ftd_utils.get_data_value(data, var_);
+                                    let variable = ftd_utils.get_name_and_remaining(var_)[0];
                                     let dependent_dependencies = data[variable].dependencies[node];
                                     let call = false;
                                     for (const d in dependent_dependencies) {
@@ -1040,24 +2085,25 @@ let ftd_utils = {
                                 if (data[ftd_utils.get_name_and_remaining(parameter)[0]] === undefined) {
                                     continue;
                                 }
-                                let default_value = json_dependency.parameters[parameter].default;
+                                let dep_default = json_dependency.parameters[parameter].default;
                                 let call = false;
-                                if (default_value === null) {
+                                if (dep_default === null) {
                                     continue;
                                 }
+                                let value = dep_default.value;
                                 if (dependency === "$value#kind$") {
                                     let get_value = ftd_utils.get_data_value(data, parameter + ".$kind$");
-                                    if (!ftd_utils.deepEqual(default_value.value, get_value)) {
+                                    if (!ftd_utils.deepEqual(value, get_value)) {
                                         call = true;
                                     }
-                                    ftd_utils.set_data_value(data, parameter + ".$kind$", default_value.value);
+                                    ftd_utils.set_data_value(data, parameter + ".$kind$", value);
                                 }
                                 if (dependency === "$value$") {
                                     let get_value = ftd_utils.get_data_value(data, parameter);
-                                    if (!ftd_utils.deepEqual(default_value.value, get_value)) {
+                                    if (!ftd_utils.deepEqual(value, get_value)) {
                                         call = true;
                                     }
-                                    ftd_utils.set_data_value(data, parameter, default_value.value);
+                                    ftd_utils.set_data_value(data, parameter, value);
                                 }
                                 let parameter_value = ftd_utils.get_data_value(data, parameter);
                                 if (call) {
@@ -1079,21 +2125,21 @@ let ftd_utils = {
                                 let style_attr = Object.keys(json_dependency.parameters).filter(w => w !== "dependents")[0];
                                 let call = false;
                                 for (const idx in set) {
-                                    let dependent = data[set[idx]].value;
-                                    let dependent_dependencies = data[set[idx]].dependencies[dependency];
+                                    let dependent = ftd_utils.get_data_value(data, set[idx]);
+                                    let variable = ftd_utils.get_name_and_remaining(set[idx])[0];
+                                    let dependent_dependencies = data[variable].dependencies[dependency];
                                     for (const d in dependent_dependencies) {
                                         if (dependent_dependencies[d].dependency_type !== "Style"
                                             || !dependent_dependencies[d].parameters[style_attr]) {
                                             continue;
                                         }
                                         let current_value = dependent_dependencies[d].parameters[style_attr].default.value;
-                                        if (ftd_utils.is_equal_condition(dependent, dependent_dependencies[d].condition)
-                                            && !ftd_utils.deepEqual(current_value, full_value)) {
+                                        if (!ftd_utils.deepEqual(current_value, full_value)) {
                                             call = true;
                                         }
                                         dependent_dependencies[d].parameters[style_attr].default.value = full_value;
                                     }
-                                    data[set[idx]].dependencies[dependency] = dependent_dependencies;
+                                    data[variable].dependencies[dependency] = dependent_dependencies;
                                     if (call) {
                                         handle_action_(id, set[idx], dependent, data, ftd_external_children, styles_edited, visibility_change);
                                     }
@@ -1227,6 +2273,12 @@ window.ftd = (function () {
     let ftd_data = {};
     let ftd_external_children = {};
 
+    // Setting up default value on <input>
+    const inputElements = document.querySelectorAll('input[data-dv]');
+    for (let input_ele of inputElements) {
+        input_ele.defaultValue = input_ele.dataset.dv;
+    }
+
     function handle_event(evt, id, action, obj) {
         let act = action["action"];
         let data = ftd_data[id];
@@ -1244,11 +2296,12 @@ window.ftd = (function () {
             exports.set_bool(id, target, !value);
         } else if (act === "message-host") {
             if (action["parameters"].data !== undefined) {
-                let value = JSON.parse(action["parameters"].data[0].value);
+                let value = action["parameters"].data[0].value;
                 let reference = JSON.parse(action["parameters"].data[0].reference);
                 let resolved_data = ftd_utils.resolve_reference(value, reference, data, obj);
-                let func = resolved_data.function.trim().replaceAll("-", "_");
-                window[func](id, resolved_data, reference);
+                let func = resolved_data.function? resolved_data.function.trim().replaceAll("-", "_").toLowerCase(): "http";
+                let method = resolved_data.method? resolved_data.method.trim().toUpperCase(): "GET";
+                window[func](id, method, resolved_data, reference);
             } else {
                 let target = action["target"].trim().replaceAll("-", "_");
                 window[target](id);
@@ -1303,11 +2356,11 @@ window.ftd = (function () {
             let value_data = action["parameters"].value[0];
             let value = ftd_utils.resolve_reference(value_data.value, value_data.reference, data, obj)
             if (action["parameters"].value[1].value === "integer") {
-                value = parseInt(value);
+                value = parseInt(value.toString());
             } else if (action["parameters"].value[1].value === "decimal") {
-                value = parseFloat(value);
+                value = parseFloat(value.toString());
             } else if (action["parameters"].value[1].value === "boolean") {
-                value = (value === "true");
+                value = (value === "true") || value;
             } else if (ftd_utils.isJson(value)) {
                 value = JSON.parse(value)
             }
@@ -1375,7 +2428,7 @@ window.ftd = (function () {
             return;
         }
 
-        let value = parseInt(data[variable].value);
+        let value = parseInt(ftd_utils.get_data_value(data, variable));
         value += increment_by;
 
         if (clamp_max !== undefined) {
@@ -1448,11 +2501,13 @@ window.ftd = (function () {
     exports.get_value = function (id, variable) {
         let data = ftd_data[id];
 
-        if (!data[variable]) {
+        let var_name = ftd_utils.get_name_and_remaining(variable)[0];
+
+        if (!data[var_name]) {
             console_log(variable, "is not in data, ignoring");
             return;
         }
-        return data[variable].value;
+        return ftd_utils.get_data_value(data, variable);
     }
 
     exports.set_multi_value = function (id, list) {
@@ -1493,6 +2548,15 @@ window.ftd = (function () {
         }
     }
 
+    exports.set_value = function (id, variable, value) {
+        let data = ftd_data[id];
+        if (!data[variable]) {
+            console_log(variable, "is not in data, ignoring");
+            return;
+        }
+        ftd_utils.handle_action(id, variable, value, data, ftd_external_children);
+    }
+
     return exports;
 })();
 
@@ -1500,48 +2564,32 @@ function console_print(id, data) {
     console.log("console_print",data);
 }
 
-function get(id, data) {
+function http(id, method="GET", data, reference) {
     let xhr = new XMLHttpRequest();
-    xhr.open("GET", data.url);
+    xhr.open(method.toUpperCase(), data.url);
     xhr.setRequestHeader("Accept", "application/json");
     xhr.setRequestHeader("Content-Type", "application/json");
 
     xhr.onreadystatechange = function () {
-        if (xhr.readyState === 4 && xhr.status === 200) {
-            let response = JSON.parse(xhr.response);
-            if (!!response.data.url) {
-                window.location.href = response.data.url;
-            } else if (!!response.data.reload) {
-                window.location.reload();
-            }
-        } else if (xhr.readyState === 4) {
+        if (xhr.readyState === 4 && xhr.status !== 200) {
             console.log("Error in calling url: ", data.url, xhr.responseText);
+            return;
+        }
+        if (xhr.readyState !== 4) {
+            return;
+        }
+        let response = JSON.parse(xhr.response);
+        console_log("API response", data.url, xhr.response)
+        if (!!response.data && !!response.data.url) {
+            window.location.href = response.data.url;
+        } else if (!!response.data && !!response.data.reload) {
+            window.location.reload();
+        } else {
+            for (const key of Object.keys(response.data)) {
+                ftd.set_value(id, key, response.data[key])
+            }
         }
     };
-
-    xhr.send();
-}
-
-
-function post(id, data) {
-    let xhr = new XMLHttpRequest();
-    xhr.open("POST", data.url);
-    xhr.setRequestHeader("Accept", "application/json");
-    xhr.setRequestHeader("Content-Type", "application/json");
-
-    xhr.onreadystatechange = function () {
-        if (xhr.readyState === 4 && xhr.status === 200) {
-            let response = JSON.parse(xhr.response);
-            if (!!response.data.url) {
-                window.location.href = response.data.url;
-            } else if (!!response.data.reload) {
-                window.location.reload();
-            }
-        } else if (xhr.readyState === 4) {
-            console.log("Error in calling url: ", data.url, xhr.responseText);
-        }
-    };
-
     xhr.send(JSON.stringify(data));
 }
 
@@ -1566,7 +2614,8 @@ window.ftd.post_init = function () {
     const FTD_DESKTOP_BREAKPOINT = "ftd#desktop-breakpoint";
     const FTD_THEME_COLOR = "ftd#theme-color";
     const THEME_COLOR_META = "theme-color";
-
+    const MARKDOWN_COLOR = "ftd#markdown-color";
+    const MARKDOWN_BACKGROUND_COLOR = "ftd#markdown-background-color";
     let last_device;
 
     function initialise_device() {
@@ -1584,6 +2633,70 @@ window.ftd.post_init = function () {
         window.ftd.set_string_for_all(FTD_DEVICE, current);
         last_device = current;
         console_log("last_device", last_device);
+    }
+
+    function update_markdown_colors() {
+        // remove all colors from ftd.css: copy every deleted stuff in this function
+        let markdown_style_sheet = document.createElement('style');
+
+
+        markdown_style_sheet.innerHTML = `
+        .ft_md a {
+            color: ${window.ftd.get_value("main", MARKDOWN_COLOR + ".link.light")};
+            background-color: ${window.ftd.get_value("main", MARKDOWN_BACKGROUND_COLOR + ".link.light")};
+        }
+        body.fpm-dark .ft_md a {
+            color: ${window.ftd.get_value("main", MARKDOWN_COLOR + ".link.dark")};
+            background-color: ${window.ftd.get_value("main", MARKDOWN_BACKGROUND_COLOR + ".link.dark")};
+        }
+        
+        .ft_md code {
+            color: ${window.ftd.get_value("main", MARKDOWN_COLOR + ".code.light")};
+            background-color: ${window.ftd.get_value("main", MARKDOWN_BACKGROUND_COLOR + ".code.light")};
+        }
+        body.fpm-dark .ft_md code {
+            color: ${window.ftd.get_value("main", MARKDOWN_COLOR + ".code.dark")};
+            background-color: ${window.ftd.get_value("main", MARKDOWN_BACKGROUND_COLOR + ".code.dark")};
+        }        
+                
+        .ft_md a:visited {
+            color: ${window.ftd.get_value("main", MARKDOWN_COLOR + ".link-visited.light")};
+            background-color: ${window.ftd.get_value("main", MARKDOWN_BACKGROUND_COLOR + ".link-visited.light")};
+        }      
+        body.fpm-dark .ft_md a:visited {
+            color: ${window.ftd.get_value("main", MARKDOWN_COLOR + ".link-visited.dark")};
+            background-color: ${window.ftd.get_value("main", MARKDOWN_BACKGROUND_COLOR + ".link-visited.dark")};
+        }
+            
+        .ft_md a code {
+            color: ${window.ftd.get_value("main", MARKDOWN_COLOR + ".link-code.light")};
+            background-color: ${window.ftd.get_value("main", MARKDOWN_BACKGROUND_COLOR + ".link-code.light")};
+        }
+        body.fpm-dark .ft_md a code {
+            color: ${window.ftd.get_value("main", MARKDOWN_COLOR + ".link-code.dark")};
+            background-color: ${window.ftd.get_value("main", MARKDOWN_BACKGROUND_COLOR + ".link-code.dark")};
+        }
+                
+        .ft_md a:visited code {
+            color: ${window.ftd.get_value("main", MARKDOWN_COLOR + ".link-visited-code.light")};
+            background-color: ${window.ftd.get_value("main", MARKDOWN_BACKGROUND_COLOR + ".link-visited-code.light")};
+        }
+        body.fpm-dark .ft_md a:visited code {
+            color: ${window.ftd.get_value("main", MARKDOWN_COLOR + ".link-visited-code.dark")};
+            background-color: ${window.ftd.get_value("main", MARKDOWN_BACKGROUND_COLOR + ".link-visited-code.dark")};            
+        }
+        
+        .ft_md ul ol li:before {
+            color: ${window.ftd.get_value("main", MARKDOWN_COLOR + ".ul-ol-li-before.light")};
+            background-color: ${window.ftd.get_value("main", MARKDOWN_BACKGROUND_COLOR + ".ul-ol-li-before.light")};
+        }     
+        body.fpm-dark .ft_md ul ol li:before {
+            color: ${window.ftd.get_value("main", MARKDOWN_COLOR + ".ul-ol-li-before.dark")};
+            background-color: ${window.ftd.get_value("main", MARKDOWN_BACKGROUND_COLOR + ".ul-ol-li-before.dark")};
+        }     
+        `;
+
+        document.getElementsByTagName('head')[0].appendChild(markdown_style_sheet);
     }
 
     function get_device() {
@@ -1757,7 +2870,7 @@ window.ftd.post_init = function () {
     }
 
     function update_dark_mode() {
-        let current_dark_mode_cookie = get_cookie(DARK_MODE_COOKIE, COOKIE_LIGHT_MODE);
+        let current_dark_mode_cookie = get_cookie(DARK_MODE_COOKIE, COOKIE_SYSTEM_LIGHT);
 
         switch (current_dark_mode_cookie) {
             case COOKIE_SYSTEM_LIGHT:
@@ -1783,6 +2896,7 @@ window.ftd.post_init = function () {
     }
     initialise_dark_mode();
     initialise_device();
+    update_markdown_colors();
 };
 
             window.ftd.init("main", "ftd-data", "ftd-external-children");

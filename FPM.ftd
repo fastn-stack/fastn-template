@@ -1,8 +1,7 @@
 -- import: fpm
 
 -- fpm.package: <user_name>.github.io/<repo_name>
-zip: github.com/<user_name>/<repo_name>/archive/refs/heads/main.zip
-base: https://raw.githubusercontent.com/<user_name>/<repo_name>/main
+download-base-url: https://raw.githubusercontent.com/<user_name>/<repo_name>/main
 
 -- fpm.dependency: fifthtry.github.io/doc-site as ds
 
