@@ -1,0 +1,25 @@
+name: Deploy FPM on Heroku
+
+on:
+  workflow_dispatch:
+    input:
+      dynoNumber:
+        description: 'Dyno ID (web.1)'
+        default: "web.1"
+  workflow_call:
+env:
+  CARGO_TERM_COLOR: always
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: Redeploy Heroku
+        id: redeploy_heroku
+        run: |
+          curl --location --request DELETE \
+          --header 'Content-Type: application/json' \
+          --header 'Accept: application/vnd.heroku+json; version=3' \
+          --header 'authorization: Bearer ${{ secrets.HEROKU_TOKEN }}' \
+          --url https://api.heroku.com/apps/<heroku-app-name>/dynos/${{ github.event.inputs.dynoNumber }}
