@@ -2,7 +2,7 @@ name: Deploy FPM on Heroku
 
 on:
   workflow_dispatch:
-    input:
+    inputs:
       dynoNumber:
         description: 'Dyno ID (web.1)'
         default: "web.1"
