@@ -1,4 +1,4 @@
-name: Deploy FPM on Heroku
+name: Update FPM binary on Heroku
 
 on:
   workflow_dispatch:
