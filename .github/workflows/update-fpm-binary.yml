@@ -22,4 +22,4 @@ jobs:
           --header 'Content-Type: application/json' \
           --header 'Accept: application/vnd.heroku+json; version=3' \
           --header 'authorization: Bearer ${{ secrets.HEROKU_TOKEN }}' \
-          --url https://api.heroku.com/apps/<heroku-app-name>/dynos/${{ github.event.inputs.dynoNumber }}
+          --url https://api.heroku.com/apps/${{ secrets.HEROKU_APP_NAME }}/dynos/${{ github.event.inputs.dynoNumber }}
