@@ -2,10 +2,6 @@ name: Update FPM binary on Heroku
 
 on:
   workflow_dispatch:
-    inputs:
-      dynoNumber:
-        description: 'Dyno ID (web.1)'
-        default: "web.1"
   workflow_call:
 env:
   CARGO_TERM_COLOR: always
@@ -22,4 +18,4 @@ jobs:
           --header 'Content-Type: application/json' \
           --header 'Accept: application/vnd.heroku+json; version=3' \
           --header 'authorization: Bearer ${{ secrets.HEROKU_TOKEN }}' \
-          --url https://api.heroku.com/apps/${{ secrets.HEROKU_APP_NAME }}/dynos/${{ github.event.inputs.dynoNumber }}
+          --url https://api.heroku.com/apps/${{ secrets.HEROKU_APP_NAME }}/dynos/web.1
