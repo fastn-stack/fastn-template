@@ -33,8 +33,8 @@ All commands are run from the root of the project, from a terminal:
 | Command                | Action                                             |
 | :--------------------- | :------------------------------------------------- |
 | `fpm build`            | FPM builder installs all `FPM` dependencies        |
-| `fpm serve`            | Starts local dev server at available port          |
-|                        | `localhost:8000`                                   |
+| `fpm serve`            | Starts local dev server at available port`localhost:8000`          |
+
 
 
 ## 👀 Want to learn more?
