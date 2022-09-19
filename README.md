@@ -6,7 +6,7 @@ FPM Blank Package Template Repo
 
 > 🧑‍🚀 **Seasoned traveler?** Delete this file. Enjoy!
 
-![basics](https://fpm.dev/-/fpm.dev/static/blue-sapphire.png)
+![doc-site](https://fpm.dev/-/fpm.dev/static/docs/ds-home.png)
 
 
 ## 🚀 Project Structure
