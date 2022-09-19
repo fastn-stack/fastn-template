@@ -7,7 +7,7 @@ FPM Blank Package Template Repo
 
 > 🧑‍🚀 **Seasoned traveler?** update this file. Enjoy!
 
-![doc-site](https://fpm.dev/-/fpm.dev/static/docs/ds-home.png)
+![doc-site](doc-site-example.png)
 
 
 ## 🚀 Project Structure
