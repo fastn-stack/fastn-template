@@ -1,10 +1,11 @@
-# Welcome to [FifthTry](https://fifthtry.com)
+# Welcome to your [FPM site](https://fpm.dev/)
+
 FPM Blank Package Template Repo
 
 [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/fifthtry/fpm-heroku&env[DOWNLOAD_BASE_URL]=https://raw.githubusercontent.com/<user_name>/<repo_name>/main/)
 
 
-> 🧑‍🚀 **Seasoned traveler?** Delete this file. Enjoy!
+> 🧑‍🚀 **Seasoned traveler?** update this file. Enjoy!
 
 ![doc-site](https://fpm.dev/-/fpm.dev/static/docs/ds-home.png)
 
@@ -39,4 +40,4 @@ All commands are run from the root of the project, from a terminal:
 
 ## 👀 Want to learn more?
 
-Feel free to check [our documentation](https://fpm.dev/) or jump into our [FifthTry Discord server](https://discord.gg/UbMHAbNf).
+Feel free to check [our documentation](https://fpm.dev/) or jump into our [FifthTry Discord server](https://discord.gg/bucrdvptYd).
