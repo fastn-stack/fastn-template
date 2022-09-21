@@ -13,7 +13,6 @@ FPM Blank Package Template Repo
 src: $assets.files.doc-site-example.png
 width: fill
 
-some
 
 --- ds.h1: 🚀 Project Structure
 
