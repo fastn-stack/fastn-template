@@ -1,0 +1,8 @@
+-- import: fastn
+
+-- fastn.package: <user_name>.github.io/<repo_name>
+download-base-url: https://raw.githubusercontent.com/<user_name>/<repo_name>/main
+
+-- fastn.dependency: fifthtry.github.io/doc-site as ds
+
+-- fastn.auto-import: ds

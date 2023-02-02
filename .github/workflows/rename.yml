@@ -4,7 +4,7 @@ on: [push]
 
 jobs:
   rename-project:
-    if: ${{ github.repository != 'fifthtry/fpm-template' && github.run_number == 1 }}
+    if: ${{ github.repository != 'fifthtry/fastn-template' && github.run_number == 1 }}
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
@@ -18,8 +18,8 @@ jobs:
         shell: bash
       - name: Rename the project
         run: |
-          echo "Using '${{ env.REPOSITORY_NAME }}' and "${{ env.REPOSITORY_OWNER }}" to rename fpm package"
-          sed -i -e 's/<user_name>/${{ env.REPOSITORY_OWNER }}/g' -e 's/<repo_name>/${{ env.REPOSITORY_NAME }}/g' FPM.ftd
+          echo "Using '${{ env.REPOSITORY_NAME }}' and "${{ env.REPOSITORY_OWNER }}" to rename fastn package"
+          sed -i -e 's/<user_name>/${{ env.REPOSITORY_OWNER }}/g' -e 's/<repo_name>/${{ env.REPOSITORY_NAME }}/g' FASTN.ftd
           sed -i -e 's/<user_name>/${{ env.REPOSITORY_OWNER }}/g' -e 's/<repo_name>/${{ env.REPOSITORY_NAME }}/g' index.ftd
           sed -i -e 's/<user_name>/${{ env.REPOSITORY_OWNER }}/g' -e 's/<repo_name>/${{ env.REPOSITORY_NAME }}/g' README.md
           rm .github/workflows/rename.yml

@@ -1,4 +1,4 @@
-name: Update FPM binary on Heroku
+name: Update FASTN binary on Heroku
 
 on:
   workflow_dispatch:

@@ -2,9 +2,9 @@
 
 
 
--- ds.page: Welcome to your [FPM site](https://fpm.dev/)
+-- ds.page: Welcome to your [FASTN site](https://fastn.dev/)
 
-FPM Blank Package Template Repo
+FASTN Blank Package Template Repo
 
 🧑‍🚀 **Seasoned traveler?** update this file. Enjoy!
 
@@ -16,7 +16,7 @@ width: fill
 
 --- ds.h1: 🚀 Project Structure
 
-Inside of your FPM project, you'll see the following folders and files:
+Inside of your FASTN project, you'll see the following folders and files:
 
 
 --- ds.code:
@@ -29,7 +29,7 @@ lang:
 │   └── fifthtry.github.io/
 │   	└── All downloaded dependencies
 │   	
-├── FPM.ftd
+├── FASTN.ftd
 ├── index.ftd
 └── README.md
 
@@ -45,13 +45,13 @@ lang:
 =======================================================================
 | Command                | Action                                     |
 | :--------------------- | :----------------------------------------- |
-| fpm build              | FPM builder installs all `FPM` dependencies|
-| fpm serve              | Starts local dev server at available port  |
+| fastn build              | FASTN builder installs all `FASTN` dependencies|
+| fastn serve              | Starts local dev server at available port  |
 |                        | `localhost:8000`                           |
 =======================================================================
 
 
 --- ds.h1: 👀 Want to learn more?
 
-Feel free to check [our documentation](https://fpm.dev/) or jump into our [FifthTry Discord server](https://discord.gg/bucrdvptYd).
+Feel free to check [our documentation](https://fastn.dev/) or jump into our [FifthTry Discord server](https://discord.gg/bucrdvptYd).
 
