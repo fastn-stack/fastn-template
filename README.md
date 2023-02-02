@@ -1,8 +1,8 @@
-# Welcome to your [FPM site](https://fpm.dev/)
+# Welcome to your [FASTN site](https://fastn.io/)
 
-FPM Blank Package Template Repo
+FASTN Blank Package Template Repo
 
-[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/fifthtry/fpm-heroku&env[DOWNLOAD_BASE_URL]=https://raw.githubusercontent.com/<user_name>/<repo_name>/main/)
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/fifthtry/fastn-heroku&env[DOWNLOAD_BASE_URL]=https://raw.githubusercontent.com/<user_name>/<repo_name>/main/)
 
 
 > 🧑‍🚀 **Seasoned traveler?** update this file. Enjoy!
@@ -12,7 +12,7 @@ FPM Blank Package Template Repo
 
 ## 🚀 Project Structure
 
-Inside of your FPM project, you'll see the following folders and files:
+Inside of your FASTN project, you'll see the following folders and files:
 
 ```
 /
@@ -22,7 +22,7 @@ Inside of your FPM project, you'll see the following folders and files:
 │   └── fifthtry.github.io/
 │   	└── All downloaded dependencies
 │   	
-├── FPM.ftd
+├── FASTN.ftd
 ├── index.ftd
 └── README.md
 ```
@@ -33,11 +33,11 @@ All commands are run from the root of the project, from a terminal:
 
 | Command                | Action                                             |
 | :--------------------- | :------------------------------------------------- |
-| `fpm build`            | FPM builder installs all `FPM` dependencies        |
-| `fpm serve`            | Starts local dev server at available port`localhost:8000`          |
+| `fastn build`            | FASTN builder installs all `FASTN` dependencies        |
+| `fastn serve`            | Starts local dev server at available port`localhost:8000`          |
 
 
 
 ## 👀 Want to learn more?
 
-Feel free to check [our documentation](https://fpm.dev/) or jump into our [FifthTry Discord server](https://discord.gg/bucrdvptYd).
+Feel free to check [our documentation](https://fastn.io/) or jump into our [FifthTry Discord server](https://discord.gg/bucrdvptYd).
