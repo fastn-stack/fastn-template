@@ -2,8 +2,6 @@ name: Rename the project from template
 
 on: [push]
 
-permissions: read-all|write-all
-
 jobs:
   rename-project:
     if: ${{ github.repository != 'fifthtry/fastn-template' && github.run_number == 1 }}
