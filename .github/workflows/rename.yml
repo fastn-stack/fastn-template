@@ -5,6 +5,7 @@ on: [push]
 jobs:
   rename-project:
     if: ${{ github.repository != 'fifthtry/fastn-template' && github.run_number == 1 }}
+    permissions: write-all
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
@@ -29,5 +30,6 @@ jobs:
           # commit_options: '--amend --no-edit'
           push_options: --force
   call-deploy-workflow:
+    permissions: write-all
     needs: [ rename-project ]
     uses: ./.github/workflows/deploy.yml
