@@ -21,7 +21,7 @@ jobs:
       - name: Install fastn
         id: install_fastn
         continue-on-error: false
-        run: sh -c "$(curl -fsSL https://raw.githubusercontent.com/ftd-lang/fastn/main/install.sh)"
+        run: sh -c "$(curl -fsSL https://raw.githubusercontent.com/fastn-stack/fastn/main/install.sh)"
       - name: Build the pages with fastn
         id: build
         continue-on-error: false
