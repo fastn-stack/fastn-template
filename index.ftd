@@ -4,55 +4,48 @@
 
 -- ds.page: Welcome to your [FASTN site](https://fastn.dev/)
 
-FASTN Blank Package Template Repo
+-- ftd.column:
+align-self: center
 
-🧑‍🚀 **Seasoned traveler?** update this file. Enjoy!
+-- chat.message-left: Yo! I am Amit Upadhyay, CEO of FifthTry, welcome to the new world of FTD.
 
+-- ds.markdown: 
 
--- ds.image: doc-site
-src: $assets.files.doc-site-example.png
-width: fill
+You reached the right place, and from here let me assure you, your FTD journey is going superfast. 🙂
 
+-- end: chat.message-left
 
--- ds.h1: 🚀 Project Structure
+-- chat.message-right:  😊 Liking this chat component?
 
-Inside of your FASTN project, you'll see the following folders and files:
+-- ds.markdown:
 
+[Click here to learn more](https://fifthtry.github.io/bling/chat/)
+👍
 
--- ds.code:
-lang:
+-- end: chat.message-right
 
-/
-├── .build/
-│   └── index.html
-├── .packages/
-│   └── fifthtry.github.io/
-│   	└── All downloaded dependencies
-│   	
-├── FASTN.ftd
-├── index.ftd
-└── README.md
+-- end: ftd.column
 
+-- ds.h1: How to use?
 
+It's very simple like making a sandwich. Create new `.ftd` file and just say:
 
--- ds.h1: 🧞 Commands
+-- ds.code: `-- ds.page` 
+lang: ftd
 
-All commands are run from the root of the project, from a terminal:
+\-- ds.page: Your page title goes here
 
---- ds.code:
-lang:
-
-=======================================================================
-| Command                | Action                                     |
-| :--------------------- | :----------------------------------------- |
-| fastn build              | FASTN builder installs all `FASTN` dependencies|
-| fastn serve              | Starts local dev server at available port  |
-|                        | `localhost:8000`                           |
-=======================================================================
+Your page content goes here.
 
 
--- ds.h1: 👀 Want to learn more?
+-- ds.h1: Need sidebar at right side of page?
 
-Feel free to check [our documentation](https://fastn.dev/) or jump into our [FifthTry Discord server](https://discord.gg/bucrdvptYd).
+Here it is, [use this document](https://fifthtry.github.io/doc-site/docs/right-sidebar/).
+
+
+-- ds.h1: 👀 Learn FTD and become a pro?
+
+You are one click away, just check [our documentation](https://fastn.dev/) and 
+dont forget to jump into our [FifthTry Discord server](https://discord.gg/bucrdvptYd).
 
 -- end: ds.page
