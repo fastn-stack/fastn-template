@@ -9,17 +9,17 @@ FASTN Blank Package Template Repo
 🧑‍🚀 **Seasoned traveler?** update this file. Enjoy!
 
 
---- ds.image: doc-site
+-- ds.image: doc-site
 src: $assets.files.doc-site-example.png
 width: fill
 
 
---- ds.h1: 🚀 Project Structure
+-- ds.h1: 🚀 Project Structure
 
 Inside of your FASTN project, you'll see the following folders and files:
 
 
---- ds.code:
+-- ds.code:
 lang:
 
 /
@@ -35,7 +35,7 @@ lang:
 
 
 
---- ds.h1: 🧞 Commands
+-- ds.h1: 🧞 Commands
 
 All commands are run from the root of the project, from a terminal:
 
@@ -51,7 +51,8 @@ lang:
 =======================================================================
 
 
---- ds.h1: 👀 Want to learn more?
+-- ds.h1: 👀 Want to learn more?
 
 Feel free to check [our documentation](https://fastn.dev/) or jump into our [FifthTry Discord server](https://discord.gg/bucrdvptYd).
 
+-- end: ds.page
