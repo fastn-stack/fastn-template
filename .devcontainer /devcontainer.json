@@ -1,0 +1,27 @@
+{
+  "image": "mcr.microsoft.com/devcontainers/universal:2",
+  "hostRequirements": {
+    "cpus": 2
+  },
+  "waitFor": "onCreateCommand",
+  "onCreateCommand": "sudo bash -c \"$(curl -fsSL https://raw.githubusercontent.com/fastn-stack/fastn/main/install.sh)\"",
+  "postCreateCommand": "",
+  "postAttachCommand": {
+    "server": "fastn serve"
+  },
+  "customizations": {
+    "codespaces": {
+      "openFiles": [
+        "index.ftd",
+        "FASTN.ftd"
+      ]
+    }
+  },
+  "portsAttributes": {
+    "8000": {
+      "label": "Preview",
+      "onAutoForward": "openPreview"
+    }
+  },
+  "forwardPorts": [8000]
+}
