@@ -1,0 +1,51 @@
+-- import: <user_name>.github.io/<repo_name>/assets
+
+
+
+-- ds.page: Welcome to your [FASTN site](https://fastn.dev/)
+
+-- ftd.column:
+align-self: center
+
+-- chat.message-left: Yo! I am Amit Upadhyay, CEO of FifthTry, welcome to the new world of FTD.
+
+-- ds.markdown: 
+
+You reached the right place, and from here let me assure you, your FTD journey is going superfast. 🙂
+
+-- end: chat.message-left
+
+-- chat.message-right:  😊 Liking this chat component?
+
+-- ds.markdown:
+
+[Click here to learn more](https://fifthtry.github.io/bling/chat/)
+👍
+
+-- end: chat.message-right
+
+-- end: ftd.column
+
+-- ds.h1: How to use?
+
+It's very simple like making a sandwich. Create new `.ftd` file and just say:
+
+-- ds.code: `-- ds.page` 
+lang: ftd
+
+\-- ds.page: Your page title goes here
+
+Your page content goes here.
+
+
+-- ds.h1: Need sidebar at right side of page?
+
+Here it is, [use this document](https://fifthtry.github.io/doc-site/docs/right-sidebar/).
+
+
+-- ds.h1: 👀 Learn FTD and become a pro?
+
+You are one click away, just check [our documentation](https://fastn.dev/) and 
+dont forget to jump into our [FifthTry Discord server](https://discord.gg/bucrdvptYd).
+
+-- end: ds.page
