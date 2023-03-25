@@ -8,8 +8,6 @@ on:
     - '**.md'
   workflow_dispatch:
   workflow_call:
-env:
-  CARGO_TERM_COLOR: always
 
 jobs:
   build:
