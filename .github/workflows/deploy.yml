@@ -11,19 +11,14 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - uses: FranzDiebold/github-env-vars-action@v2
-      - name: Install fastn
-        id: install_fastn
-        run: sh -c "$(curl -fsSL https://fastn.io/install.sh)"
+      - run: sh -c "$(curl -fsSL https://fastn.io/install.sh)"
       - name: Build the pages with fastn
-        id: build
         run: |
           echo "Using '$CI_REPOSITORY_NAME_SLUG/' as the base while building"
           fastn build --base=/$CI_REPOSITORY_NAME/
-      - name: copy CNAME
+      - name: copy CNAME if found
         run: '(test -f CNAME && cp CNAME .build) || echo "CNAME does not exist, skipping step"'
-      - name: Deploy
-        uses: peaceiris/actions-gh-pages@v3
-        if: ${{ github.ref == 'refs/heads/main' }}
+      - uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./.build
