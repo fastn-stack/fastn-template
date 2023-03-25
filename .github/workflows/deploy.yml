@@ -3,9 +3,6 @@ name: Deploy Site
 on:
   push:
     branches: [ main ]
-    paths:
-    - '**.ftd'
-    - '**.md'
 
 jobs:
   build:
