@@ -5,39 +5,26 @@ FASTN Blank Package Template Repo
 [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/fifthtry/fastn-heroku&env[DOWNLOAD_BASE_URL]=https://raw.githubusercontent.com/<user_name>/<repo_name>/main/)
 
 
-> 🧑‍🚀 **Seasoned traveler?** update this file. Enjoy!
+# Overview
 
-![doc-site](doc-site-example.png)
+⚡️ [doc-site](https://fastn-community.github.io/doc-site/) will help you create a beautiful documentation site in no time.
+
+It provides out-of-the-box documentation features that can be used to create any kind of site(personal website, blog, etc).
+
+## How it looks?
 
 
-## 🚀 Project Structure
 
-Inside of your FASTN project, you'll see the following folders and files:
+## 🚀 Fast Track
 
-```
-/
-├── .build/
-│   └── index.html
-├── .packages/
-│   └── fifthtry.github.io/
-│   	└── All downloaded dependencies
-│   	
-├── FASTN.ftd
-├── index.ftd
-└── README.md
-```
+Use this fastn template to create your first [fastn web-site](https://fastn.com/expander/hello-world/-/build/) project in just 5 minutes!
 
-## 🧞 Commands
+## 🌟 Whats next?
 
-All commands are run from the root of the project, from a terminal:
-
-| Command                | Action                                             |
-| :--------------------- | :------------------------------------------------- |
-| `fastn build`            | FASTN builder installs all `FASTN` dependencies        |
-| `fastn serve`            | Starts local dev server at available port`localhost:8000`          |
-
+Create your first page. [Click here to know more](https://fastn-community.github.io/doc-site/page/)
 
 
 ## 👀 Want to learn more?
 
-Feel free to check [our documentation](https://fastn.io/) or jump into our [FifthTry Discord server](https://discord.gg/bucrdvptYd).
+Feel free to check our [expander course](https://fastn.com/expander/) or jump into our [FifthTry Discord server](https://discord.gg/bucrdvptYd).
+
