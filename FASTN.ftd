@@ -3,7 +3,5 @@
 -- fastn.package: <user_name>.github.io/<repo_name>
 
 -- fastn.dependency: fastn-community.github.io/doc-site as ds
--- fastn.dependency: fastn-community.github.io/bling as bling
 
--- fastn.auto-import: bling/chat as chat
 -- fastn.auto-import: ds
