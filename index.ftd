@@ -3,49 +3,39 @@
 
 
 -- ds.page: Welcome to your [FASTN site](https://fastn.io/)
+site-name: NULL
 
--- ftd.column:
-align-self: center
+⚡️ `doc-site` will help you create a beautiful documentation site in no time.
 
--- chat.message-left: Yo! I am Amit Upadhyay, CEO of FifthTry, welcome to the new world of FTD.
+It provides out-of-the-box documentation features that can be used to create any
+kind of site(personal website, blog, etc).
 
--- ds.markdown: 
+-- ds.h2: 🚀 Fast Track 
 
-You reached the right place, and from here let me assure you, your FTD journey is going superfast. 🙂
+Create your first fastn [web-site](https://fastn.com/expander/hello-world/-/build/) 
+project in just 5 minutes!
 
--- end: chat.message-left
+-- ds.h2: 🌟 Whats next?
 
--- chat.message-right:  😊 Liking this chat component?
+Create your first page. 
+[Click here to know more](https://fastn-community.github.io/doc-site/page/).
 
--- ds.markdown:
+-- ds.h2: 👀 Want to learn more?
 
-[Click here to learn more](https://fifthtry.github.io/bling/chat/)
-👍
-
--- end: chat.message-right
-
--- end: ftd.column
-
--- ds.h1: How to use?
-
-It's very simple like making a sandwich. Create new `.ftd` file and just say:
-
--- ds.code: `-- ds.page` 
-lang: ftd
-
-\-- ds.page: Your page title goes here
-
-Your page content goes here.
+Feel free to check [our expander course](https://fastn.com/expander/) or jump
+into our [FifthTry Discord server](https://discord.gg/bucrdvptYd).
 
 
--- ds.h1: Need sidebar at right side of page?
+-- ds.h2: 🎯 Used by?
 
-Here it is, [use this document](https://fifthtry.github.io/doc-site/docs/right-sidebar/).
+Our all documentation sites uses this `doc-site` theme.
 
+- [fastn.com](https://fastn.com/home/)
+- [FifthTry.com](https://www.fifthtry.com/)
 
--- ds.h1: 👀 Learn FTD and become a pro?
+-- ds.h1: 👀 Learn fastn and become a pro?
 
-You are one click away, just check [our documentation](https://fastn.dev/) and 
+You are one click away, just check [our documentation](https://fastn.com/) and 
 dont forget to jump into our [FifthTry Discord server](https://discord.gg/bucrdvptYd).
 
 -- end: ds.page
