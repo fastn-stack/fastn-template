@@ -2,7 +2,7 @@
 
 
 
--- ds.page: Welcome to your [FASTN site](https://fastn.io/)
+-- ds.page: Welcome to doc-site
 site-name: NULL
 
 
@@ -11,30 +11,34 @@ site-name: NULL
 It provides out-of-the-box documentation features that can be used to create any
 kind of site(personal website, blog, etc).
 
--- ds.h2: 🚀 Fast Track 
+-- ds.h3: 🚀 Fast Track 
 
 Create your first fastn [web-site](https://fastn.com/expander/hello-world/-/build/) 
 project in just 5 minutes!
 
--- ds.h2: 🌟 Whats next?
+-- ds.h3: 🌟 Whats next?
 
 Create your first page. 
 [Click here to know more](https://fastn-community.github.io/doc-site/page/).
 
--- ds.h2: 👀 Want to learn more?
+-- ds.h3: 👀 Want to learn more?
 
 Feel free to check [our expander course](https://fastn.com/expander/) or jump
 into our [FifthTry Discord server](https://discord.gg/bucrdvptYd).
 
 
--- ds.h2: 🎯 Used by?
+-- ds.h3: 🎯 Used by?
 
 Our all documentation sites uses this `doc-site` theme.
 
 - [fastn.com](https://fastn.com/home/)
 - [FifthTry.com](https://www.fifthtry.com/)
 
--- ds.h1: 👀 Learn fastn and become a pro?
+-- ds.markdown:
+
+\.
+
+-- ds.h2: Learn fastn and become a pro?
 
 You are one click away, just check [our documentation](https://fastn.com/) and 
 dont forget to jump into our [FifthTry Discord server](https://discord.gg/bucrdvptYd).
