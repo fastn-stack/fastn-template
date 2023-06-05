@@ -1,0 +1,55 @@
+-- import: ds
+-- import: ds/common
+-- import: fastn-community.github.io/footer
+
+;; ********* my-ds document **********
+
+-- common.site-logo site-logo: $assets.files.assets.ipsum-logo.svg
+
+
+-- component page:
+children wrapper:
+optional caption title:
+optional body body:
+boolean sidebar: false
+ftd.ui list right-sidebar:
+optional string document-title:
+optional string document-description:
+optional ftd.raw-image-src document-image:
+
+-- ds.page: $page.title
+site-name: my-fastn
+site-url: index.html
+site-logo: $site-logo
+body: $page.body
+show-footer: true
+right-sidebar: $page.right-sidebar
+sidebar: $page.sidebar
+document-title: $page.document-title
+document-description: $page.document-description
+document-image: $page.document-image
+github-url: https://github.com/fastn-community/doc-site/
+github-icon: true
+
+-- ds.page.footer:
+
+-- footer.social-sideline-footer:
+social: true
+site-logo: $site-logo
+site-url: index.html
+twitter-url: https://twitter.com/FifthTryHQ
+discord-url: https://discord.gg/bucrdvptYd
+copyright: Copyright © 2023 - [FifthTry.com](https://www.fifthtry.com/)
+
+-- end: ds.page.footer
+
+-- ftd.column:
+spacing.fixed.px: 24
+width: fill-container
+children: $page.wrapper
+
+-- end: ftd.column
+
+-- end: ds.page
+
+-- end: page
