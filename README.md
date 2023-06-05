@@ -13,7 +13,8 @@ It provides out-of-the-box documentation features that can be used to create any
 
 ## How it looks?
 
-![doc-site](doc-site-example-dark.jpg)
+![doc-site](./github/assets/doc-site-example-dark.jpg)
+
 
 ## 🚀 Fast Track
 
