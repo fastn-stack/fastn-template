@@ -881,6 +881,14 @@ window.ftd.utils.set_full_height = function () {
 window.ftd.utils.reset_full_height = function () {
     document.body.style.height = `100%`;
 };
+window.ftd.utils.get_event_key = function (event) {
+    if (65 <= event.keyCode && event.keyCode <= 90) {
+        return String.fromCharCode(event.keyCode).toLowerCase();
+    }
+    else {
+        return event.key;
+    }
+};
 window.ftd.utils.function_name_to_js_function = function (s) {
     let new_string = s;
     let startsWithDigit = /^\d/.test(s);
@@ -1083,22 +1091,6 @@ function updatedID(str, flag, suffix) {
     }
 }
 
-
-(function () {
-    document.addEventListener('keypress', (event) => {
-        let key = event.key;
-        let url = window.location.href;
-        let source = document.baseURI.endsWith("/") ? "-/view-src/" : "/-/view-src/";
-        let new_url = document.baseURI + source + url.replace(document.baseURI, "");
-        if (url.includes("-/view-src/")) {
-            new_url = url.replace("-/view-src/", "");
-        }
-        if (key === '.' &&
-            ((event.target.nodeName !== "INPUT" && event.target.nodeName !== "TEXTAREA") || event.ctrlKey)) {
-                window.location.href = new_url;
-            }
-        }, false);
-})();
 
 (function() {
     /*! instant.page v5.1.0 - (C) 2019-2020 Alexandre Dieulot - https://instant.page/license */
