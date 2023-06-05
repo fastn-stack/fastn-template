@@ -8,7 +8,7 @@ favicon: /-/<user_name>.github.io/<repo_name>/favicon.ico
 -- fastn.dependency: fastn-community.github.io/footer
 
 -- fastn.auto-import: ds
--- fastn.auto-import: my-project/assets
+-- fastn.auto-import: <user_name>.github.io/<repo_name>/assets
 -- fastn.auto-import: fastn
 
 
