@@ -1,7 +1,19 @@
 -- import: fastn
 
 -- fastn.package: <user_name>.github.io/<repo_name>
+favicon: /-/<user_name>.github.io/<repo_name>/favicon.ico
+
 
 -- fastn.dependency: fastn-community.github.io/doc-site as ds
+-- fastn.dependency: fastn-community.github.io/footer
 
 -- fastn.auto-import: ds
+-- fastn.auto-import: my-project/assets
+-- fastn.auto-import: fastn
+
+
+-- fastn.sitemap:
+
+# Home Page: index.html
+
+- Page with Right Sidebar: /sidebar/
