@@ -8,12 +8,12 @@ favicon: /-/<user_name>.github.io/<repo_name>/favicon.ico
 -- fastn.dependency: fastn-community.github.io/footer
 
 -- fastn.auto-import: ds
+-- fastn.auto-import: <user_name>.github.io/<repo_name>/FASTN/my-ds
 -- fastn.auto-import: <user_name>.github.io/<repo_name>/assets
--- fastn.auto-import: fastn
 
 
 -- fastn.sitemap:
 
-# Home Page: index.html
+# Home Page: /
 
 - Page with Right Sidebar: /sidebar/
