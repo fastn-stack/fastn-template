@@ -13,6 +13,6 @@ favicon: /-/<user_name>.github.io/<repo_name>/favicon.ico
 
 -- fastn.sitemap:
 
-# Home: /
+# Home: index.html
 
 - Right Sidebar Sample: /sidebar/
