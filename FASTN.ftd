@@ -4,16 +4,15 @@
 favicon: /-/<user_name>.github.io/<repo_name>/favicon.ico
 
 
--- fastn.dependency: fastn-community.github.io/doc-site as ds
+-- fastn.dependency: fastn-community.github.io/doc-site
 -- fastn.dependency: fastn-community.github.io/footer
 
--- fastn.auto-import: ds
--- fastn.auto-import: <user_name>.github.io/<repo_name>/FASTN/my-ds
+-- fastn.auto-import: <user_name>.github.io/<repo_name>/FASTN/ds
 -- fastn.auto-import: <user_name>.github.io/<repo_name>/assets
 
 
 -- fastn.sitemap:
 
-# Home Page: /
+# Home: /
 
-- Page with Right Sidebar: /sidebar/
+- Right Sidebar Sample: /sidebar/

@@ -1,7 +1,7 @@
--- my-ds.page: Page with right-sidebar 👉
+-- ds.page: Page with right-sidebar 👉
 sidebar: true
 
--- my-ds.page.right-sidebar:
+-- ds.page.right-sidebar:
 
 -- ds.h3: Heading in sidebar
 
@@ -14,9 +14,9 @@ lang: ftd
 
 \-- ftd.text: Hello World
 
--- end: my-ds.page.right-sidebar
+-- end: ds.page.right-sidebar
 
--- my-ds.page.body:
+-- ds.page.body:
 
 If you want to show right-sidebar on your page you can add it like sidebar shown
 in this page 👉.
@@ -33,10 +33,10 @@ Copy below code snippet to create pages like this with right-sidebar.
 -- ds.code:
 lang: ftd
 
-\-- my-ds.page: Page with right-sidebar 👉
+\-- ds.page: Page with right-sidebar 👉
 sidebar: true
 
-\-- my-ds.page.right-sidebar:
+\-- ds.page.right-sidebar:
 
 \-- ds.h3: Heading in sidebar
 
@@ -49,9 +49,9 @@ lang: ftd
 
 \-- ftd.text: Hello World
 
-\-- end: my-ds.page.right-sidebar
+\-- end: ds.page.right-sidebar
 
-\-- my-ds.page.body:
+\-- ds.page.body:
 
 If you want to show right-sidebar on your page you can add it like sidebar shown
 in this page 👉.
@@ -61,6 +61,6 @@ in this page 👉.
 [Click here](https://fastn-community.github.io/doc-site/right-sidebar/) to read
 more about `right-sidebar`.
 
-\-- end: my-ds.page
+\-- end: ds.page
 
--- end: my-ds.page
+-- end: ds.page
