@@ -15,10 +15,10 @@ boolean sidebar: true
 optional string document-title:
 optional string document-description:
 optional ftd.raw-image-src document-image:
-optional string site-name: NULL
+optional string site-name: fastn template
 optional ftd.image-src site-logo: $site-logo
-boolean github-icon: true
-optional string github-url: https://github.com/fastn-stack/fastn
+boolean github-icon: false
+optional string github-url: 
 boolean full-width: false
 ftd.type-data types: $typo.types
 ftd.color-scheme colors: $ftd.default-colors
