@@ -40,7 +40,7 @@ site-logo: $site-logo
 site-url: index.html
 twitter-url: https://twitter.com/FifthTryHQ
 discord-url: https://discord.gg/bucrdvptYd
-copyright: Copyright © 2023 - [FifthTry.com](https://www.fifthtry.com/)
+copyright: Copyright © 2023 - [<user_name>.github.io/<repo_name>](https://<user_name>.github.io/<repo_name>)
 
 -- end: page.footer
 
