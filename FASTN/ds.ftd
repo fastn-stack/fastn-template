@@ -2,7 +2,8 @@
 -- import: fastn-community.github.io/footer
 -- import: fastn-community.github.io/roboto-typography as typo
 -- import: fastn-community.github.io/doc-site/common
--- import: fastn-community.github.io/doc-site
+-- import: fastn-community.github.io/doc-site/FASTN/ds as fastn-logo
+-- import: fastn-community.github.io/doc-site/
 export: markdown,h0,h1,h2,h3,code,rendered,output,image,iframe,youtube,compact-text,post,posts,featured-post,image-first,image-in-between,without-image,author-bio,tip,not-found-1,not-found-2,link,link-group
 
 -- common.site-logo site-logo: $assets.files.assets.ipsum-logo.svg
@@ -34,13 +35,11 @@ string site-url: $common.site-url
 
 -- ftd.ui list page.footer:
 
--- footer.social-sideline-footer:
-social: true
-site-logo: $site-logo
-site-url: index.html
-twitter-url: https://twitter.com/FifthTryHQ
-discord-url: https://discord.gg/bucrdvptYd
-copyright: Copyright © 2023 - [<user_name>.github.io/<repo_name>](https://<user_name>.github.io/<repo_name>)
+-- footer.fastn-footer:
+copyright: copyright: Copyright © 2023 - [<user_name>.github.io/<repo_name>](https://<user_name>.github.io/<repo_name>)
+site-logo: $fastn-logo.fastn-logo
+powered-by-text: Powered by
+powered-by-link: https://fastn.com/
 
 -- end: page.footer
 
