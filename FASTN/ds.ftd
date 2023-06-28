@@ -2,7 +2,6 @@
 -- import: fastn-community.github.io/footer
 -- import: fastn-community.github.io/roboto-typography as typo
 -- import: fastn-community.github.io/doc-site/common
--- import: fastn-community.github.io/doc-site/FASTN/ds as fastn-logo
 -- import: fastn-community.github.io/doc-site/
 export: markdown,h0,h1,h2,h3,code,rendered,output,image,iframe,youtube,compact-text,post,posts,featured-post,image-first,image-in-between,without-image,author-bio,tip,not-found-1,not-found-2,link,link-group
 
@@ -37,7 +36,7 @@ string site-url: $common.site-url
 
 -- footer.fastn-footer:
 copyright: Copyright © 2023 - <user_name>.github.io/<repo_name>
-site-logo: $fastn-logo.fastn-logo
+site-logo: $common.fastn-logo
 powered-by-text: Powered by
 powered-by-link: https://fastn.com/
 
