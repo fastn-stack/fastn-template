@@ -22,8 +22,6 @@ Explore websites and projects that have utilized this component/template
 **[here](https://fastn-community.github.io/doc-site/#dart-used-by)** for
 inspiration.
 
-## [Changelog](Changelog.md)
-
 ## fastn and Curious?
 
 Discover more of fastn here.
