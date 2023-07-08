@@ -20,8 +20,8 @@ optional ftd.image-src site-logo: $site-logo
 boolean github-icon: false
 optional string github-url: 
 boolean full-width: false
-ftd.type-data types: $typo.types
-ftd.color-scheme colors: $ftd.default-colors
+ftd.type-data typography: $typo.types
+ftd.color-scheme color-scheme: $ftd.default-colors
 integer logo-width: $common.logo-width
 integer logo-height: $common.logo-height
 boolean show-footer: true
@@ -45,10 +45,10 @@ powered-by-link: https://fastn.com/
 -- doc-site.page: $page.title
 site-logo: $page.site-logo
 body: $page.body
-colors: $page.colors
+colors: $page.color-scheme
 sidebar: $page.sidebar
 full-width: $page.full-width
-types: $page.types
+types: $page.typography
 show-banner: $page.show-banner
 show-footer: $page.show-footer
 site-name: $page.site-name
