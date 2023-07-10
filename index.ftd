@@ -1,40 +1,40 @@
--- ds.page: Welcome to doc-site
+-- ftd.column:
+width: fill-container 
+height: fill-container 
+background.solid: #eee
+spacing.fixed.px: 20
+align-content: center
 
+-- card:
 
-⚡️ `doc-site` will help you create a beautiful documentation site in no time.
+-- card: Hyderabad
 
-It provides out-of-the-box documentation features that can be used to create any
-kind of site(personal website, blog, etc).
+cm of Telangana is K.C.R and I.T minister is K.T.R👍👍
 
-[Click here](https://fastn-community.github.io/doc-site/) to read doc-site
-documentation.
+-- end: ftd.column
 
--- ds.h3: 🚀 Fast Track 
+-- component card:
+caption title: Charminr
+body description:..Charminar is the best palce to visit in hederabad.It was built by nawabs. Near Charminar there will be many shops fpr shopping.
 
-Create your first fastn [web-site](https://fastn.com/expander/hello-world/-/build/) 
-project in just 5 minutes!
+-- ftd.row:
+width.fixed.px: 650
+height.fixed.px: 350
+background.solid: #c5dff5
+border-width.px: 3
+padding.px :20
+border-radius.px: 20
+spacing.fixed.px: 50 
+-- ftd.image:
+src: https://mediaim.expedia.com/destination/2/66a11e50b6bf1d9753de454ac3bce80c.jpg
+height: fill-container
+border-radius.px: 20
+-- ftd.column:
+-- ftd.text: $card.title
+role: $inherited.types.heading-medium
+-- ftd.text: $card.description
+role: $inherited.types.copy-regular
 
--- ds.h3: 🌟 Whats next?
-
-Create your first page. 
-[Click here to know more](https://fastn-community.github.io/doc-site/components/page/).
-
--- ds.h3: 👀 Want to learn more?
-
-Feel free to check [our expander course](https://fastn.com/expander/) or jump
-into our [FifthTry Discord server](https://discord.gg/bucrdvptYd).
-
-
--- ds.h3: 🎯 Used by?
-
-Our all documentation sites uses this `doc-site` theme.
-
-- [fastn.com](https://fastn.com/home/)
-- [FifthTry.com](https://www.fifthtry.com/)
-
--- ds.h2: Learn fastn and become a pro?
-
-You are one click away, just check [our documentation](https://fastn.com/) and 
-dont forget to jump into our [FifthTry Discord server](https://discord.gg/bucrdvptYd).
-
--- end: ds.page
+-- end: ftd.column
+-- end: ftd.row
+-- end: card
