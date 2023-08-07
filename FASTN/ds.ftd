@@ -1,8 +1,8 @@
 -- import: fastn
 -- import: fastn-community.github.io/footer
 -- import: fastn-community.github.io/roboto-typography as typo
--- import: fastn-community.github.io/doc-site/common
--- import: fastn-community.github.io/doc-site/
+-- import: doc-site/common
+-- import: doc-site
 export: markdown,h0,h1,h2,h3,code,rendered,output,image,iframe,youtube,compact-text,post,posts,featured-post,image-first,image-in-between,without-image,author-bio,tip,not-found-1,not-found-2,link,link-group
 
 -- common.site-logo site-logo: $assets.files.assets.ipsum-logo.svg
