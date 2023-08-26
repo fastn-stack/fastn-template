@@ -31,6 +31,7 @@ ftd.ui list banner:
 fastn.app-ui apps: $common.apps
 boolean login-button: $common.login-button
 string site-url: $common.site-url
+optional ftd.raw-image-src favicon:
 
 -- ftd.ui list page.footer:
 
@@ -65,6 +66,7 @@ document-image: $page.document-image
 apps: $page.apps
 login-button: $page.login-button
 site-url: $page.site-url
+favicon: $page.favicon
 
 -- ftd.column:
 spacing.fixed.em: 0.8
