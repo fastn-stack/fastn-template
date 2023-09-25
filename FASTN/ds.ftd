@@ -1,6 +1,7 @@
 -- import: fastn
 -- import: fastn-community.github.io/footer
 -- import: fastn-community.github.io/roboto-typography as typo
+-- import: fastn-community.github.io/dark-flame-cs as cs
 -- import: doc-site/common
 -- import: doc-site
 export: markdown,h0,h1,h2,h3,code,rendered,output,image,iframe,youtube,compact-text,post,posts,featured-post,image-first,image-in-between,without-image,author-bio,tip,not-found-1,not-found-2,link,link-group
@@ -21,7 +22,7 @@ boolean github-icon: false
 optional string github-url: 
 boolean full-width: false
 ftd.type-data typography: $typo.types
-ftd.color-scheme color-scheme: $ftd.default-colors
+ftd.color-scheme color-scheme: $cs.main
 integer logo-width: $common.logo-width
 integer logo-height: $common.logo-height
 boolean show-footer: true
