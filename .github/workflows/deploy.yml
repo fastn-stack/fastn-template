@@ -1,10 +1,10 @@
 name: Deploy Site
 
 on:
-    push:
-      branches: [ main ]
-    workflow_dispatch:
-    workflow_call:    
+  push:
+    branches: [ main ]
+  workflow_dispatch:
+  workflow_call:    
 
 jobs:
   build:
