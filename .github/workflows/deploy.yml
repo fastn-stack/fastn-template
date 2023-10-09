@@ -1,10 +1,10 @@
-name: Deploy Site
+name: Deploy HackTree Pages
 
 on:
-  push:
-    branches: [ main ]
-  workflow_dispatch:
-  workflow_call:    
+    push:
+      branches: [ main ]
+    workflow_dispatch:
+    workflow_call:    
 
 jobs:
   build:
@@ -13,18 +13,45 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - uses: FranzDiebold/github-env-vars-action@v2
+      - name: Download the cached .build
+        uses: actions/cache@v2
+        with:
+          path: ./.build
+          key: build-artifact
+      - name: Check and Restore Cache for fastn.com Directory
+        uses: actions/cache@v2
+        with:
+          path: ~/.cache/fastn.com
+          key: fastn-com-${{ hashFiles('./.build/**') }}
+          restore-keys: |
+            fastn-com-
       - run: sh -c "$(curl -fsSL https://fastn.com/install.sh)"
       - name: Build the pages with fastn
         run: |
           echo "Using '$CI_REPOSITORY_NAME_SLUG/' as the base while building"
           # To deploy the website using GitHub Pages, use the below command
-          fastn build --base=/$CI_REPOSITORY_NAME/
+          fastn build --edition=2023 --base=/$CI_REPOSITORY_NAME/
           # To deploy the website using Custom Domain, use the below command and comment
           #out the above command when deploying through GitHub Pages 
-          #fastn build --base=/
+          # fastn build --edition=2023 --base=/
       - name: copy CNAME if found
         run: '(test -f CNAME && cp CNAME .build) || echo "CNAME does not exist, skipping step"'
       - uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./.build
+      - name: Cache .build Directory
+        uses: actions/cache@v2
+        with:
+          key: build-artifact
+          restore-keys: |
+            build-artifact
+          path: ./.build
+      - name: Save fastn.com to Cache
+        uses: actions/cache@v2
+        with:
+          path: |
+              ~/.cache/fastn.com
+          key: fastn-com-
+          restore-keys: |
+            fastn-com-
