@@ -1,4 +1,4 @@
-name: Deploy HackTree Pages
+name: Deploy Site
 
 on:
     push:
