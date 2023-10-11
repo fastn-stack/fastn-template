@@ -34,9 +34,9 @@ jobs:
           commit_message: "✅ Ready to clone and code."
           push_options: --force
   build:
+    if: ${{ github.repository != 'fastn-stack/fastn-template' }}
     permissions: write-all
     runs-on: ubuntu-latest
-    needs: rename-project
     steps:
       - name: Checkout code
         uses: actions/checkout@v2
