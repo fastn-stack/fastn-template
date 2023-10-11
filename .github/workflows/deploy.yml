@@ -35,10 +35,7 @@ jobs:
           push_options: --force
   build:
     needs: rename-project
-    if: |
-      ${{ github.repository != 'fastn-stack/fastn-template' }} &&
-      always() &&
-      needs.rename-project.result == 'success' || needs.rename-project.result == 'skipped'
+    if: ${{ github.repository != 'fastn-stack/fastn-template' && always() && !failure() && !cancelled() }}
     permissions: write-all
     runs-on: ubuntu-latest
     steps:
