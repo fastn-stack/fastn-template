@@ -4,7 +4,7 @@ on: [push]
 
 jobs:
   rename-project:
-    if: ${{ github.repository != 'fifthtry/fastn-template' && github.run_number == 1 }}
+    if: ${{ github.repository != 'fastn-stack/fastn-template' && github.run_number == 1 }}
     permissions: write-all
     runs-on: ubuntu-latest
     steps:
