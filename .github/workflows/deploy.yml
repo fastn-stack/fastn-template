@@ -14,7 +14,7 @@ jobs:
         uses: actions/checkout@v2
       - name: Build the pages with fastn
         run: |
-          eecho "Using '$CI_REPOSITORY_NAME_SLUG/' as the base while building"
+          echo "Using '$CI_REPOSITORY_NAME_SLUG/' as the base while building"
           # To deploy the website using GitHub Pages, use the below command
           fastn build --edition=2023 --base=/$CI_REPOSITORY_NAME/
           # To deploy the website using Custom Domain, use the below command and comment
