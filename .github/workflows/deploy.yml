@@ -18,9 +18,8 @@ jobs:
           ref: ${{ github.head_ref }}
       - name: Rename the project
         run: |
-          sed -i -e "s/<user_name>/$(echo '${{ github.repository_owner }}' | tr '[:upper:]' '[:lower:]')/g" \
-            -e "s/<repo_name>/$(echo '${{ github.event.repository.name }}' | tr '[:upper:]' '[:lower:]')/g" \
-            FASTN.ftd FASTN/ds.ftd index.ftd sidebar.ftd README.md
+          # Replace placeholders in project files with actual repository owner and name
+          sed -i -e 's/<user_name>/${{ github.repository_owner }}/g' -e 's/<repo_name>/${{ github.event.repository.name }}/g' FASTN.ftd FASTN/ds.ftd index.ftd sidebar.ftd README.md
       - name: Commit and push changes
         uses: stefanzweifel/git-auto-commit-action@v4
         with:
